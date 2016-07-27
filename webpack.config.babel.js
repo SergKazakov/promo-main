@@ -145,15 +145,14 @@ export const makeConfig = (config = {}) => {
 
     postcss(webpack) {
       return [
-        require('postcss-import')({
-          addDependencyTo: webpack
+        require("postcss-import")({
+          addDependencyTo: webpack,
         }),
-        require("stylelint")(),
         require("postcss-cssnext")(),
-        require("postcss-reporter")(),
-        ...config.production && [
-          require("postcss-browser-reporter")(),
-        ]
+        require('postcss-font-magician')({
+          formats: 'woff2 woff'
+        }),
+        require('postcss-sorting')({ 'sort-order': 'yandex' })
       ]
     },
 
