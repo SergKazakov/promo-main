@@ -18,15 +18,12 @@ export default class Layout extends Component {
   };
 
   render() {
-    const {
-      pkg,
-    } = this.context.metadata
-
     return (
       <div className={ styles.layout }>
         <Helmet
           meta={ [ {
-            name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+            name: "viewport",
+            content: "width=device-width, initial-scale=1, user-scalable=no",
           } ] }
         />
 

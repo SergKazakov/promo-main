@@ -143,14 +143,19 @@ export const makeConfig = (config = {}) => {
       },
     },
 
-    postcss: () => [
-      require("stylelint")(),
-      require("postcss-cssnext")({ browsers: "last 2 versions" }),
-      require("postcss-reporter")(),
-      ...config.production ? [
-        require("postcss-browser-reporter")(),
-      ] : [],
-    ],
+    postcss(webpack) {
+      return [
+        require('postcss-import')({
+          addDependencyTo: webpack
+        }),
+        require("stylelint")(),
+        require("postcss-cssnext")(),
+        require("postcss-reporter")(),
+        ...config.production && [
+          require("postcss-browser-reporter")(),
+        ]
+      ]
+    },
 
     plugins: [
       new ExtractTextPlugin("[name].[hash].css", { disable: config.dev }),
