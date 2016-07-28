@@ -1,0 +1,34 @@
+[
+  {
+    "name": "facebook",
+    "url": "/"
+  },
+  {
+    "name": "twitter",
+    "url": "/"
+  },
+  {
+    "name": "google",
+    "url": "/"
+  },
+  {
+    "name": "rss",
+    "url": "/"
+  },
+  {
+    "name": "linkedin",
+    "url": "/"
+  },
+  {
+    "name": "skype",
+    "url": "/"
+  },
+  {
+    "name": "vimeo",
+    "url": "/"
+  },
+  {
+    "name": "tumblr",
+    "url": "/"
+  }
+]

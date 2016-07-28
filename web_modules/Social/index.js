@@ -1,40 +1,6 @@
 import Svg from "react-svg-inline"
 import styles from "./index.css"
-
-const social = [
-  {
-    name: "facebook",
-    url: "/",
-  },
-  {
-    name: "twitter",
-    url: "/",
-  },
-  {
-    name: "google",
-    url: "/",
-  },
-  {
-    name: "rss",
-    url: "/",
-  },
-  {
-    name: "linkedin",
-    url: "/",
-  },
-  {
-    name: "skype",
-    url: "/",
-  },
-  {
-    name: "vimeo",
-    url: "/",
-  },
-  {
-    name: "tumblr",
-    url: "/",
-  },
-]
+import social from "./social.json"
 
 const Social = () => (
   <ul className={ styles.social }>
@@ -47,7 +13,6 @@ const Social = () => (
                 className={ styles.socialSvg }
                 svg={ require(`./${name}.svg`) }
                 width="2rem"
-                height="2rem"
               />
             </a>
           </li>

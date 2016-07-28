@@ -3,7 +3,7 @@ import styles from "./index.css"
 import features from "./features.json"
 
 const Features = () => (
-  <div className={ styles.featuresWrapper }>
+  <section className={ styles.featuresWrapper }>
     <div className={ styles.features }>
       <div className={ styles.featuresInner }>
         {
@@ -20,8 +20,7 @@ const Features = () => (
         }
       </div>
     </div>
-  </div>
-
+  </section>
 )
 
 export default Features

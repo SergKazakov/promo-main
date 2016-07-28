@@ -7,7 +7,6 @@ const Hero = () => (
       className={ styles.anchor }
       svg={ require("./anchor.svg") }
       width="2.4rem"
-      height="3.2rem"
     />
   </section>
 )
