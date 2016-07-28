@@ -17,4 +17,14 @@
   text-transform: uppercase;
   font-size: 1.4rem;
   color: #f4f5f9;
+  padding: 2rem 0;
+  border-bottom: 1px solid transparent;
+  transition: color 300ms, border-color 300ms;
+}
+
+.navLinkActive,
+.navLink:hover {
+  color: #e74c3c;
+  font-weight: bold;
+  border-color: inherit;
 }

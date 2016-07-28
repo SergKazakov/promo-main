@@ -1,8 +1,17 @@
 .headerWrapper {
   padding: 4rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header {
   composes: inner from '../LayoutContainer/index.css';
   display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
 }

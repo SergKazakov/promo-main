@@ -1,10 +1,10 @@
-import styles from './index.css';
+import styles from "./index.css"
 
 const {
-  string
-} = React.PropTypes;
+  string,
+} = React.PropTypes
 
-const Title = ({title, subtitle}) => (
+const Title = ({ title, subtitle }) => (
   <div className={ styles.wrapper }>
     <h2 className={ styles.title }>
       { title }
@@ -16,11 +16,11 @@ const Title = ({title, subtitle}) => (
       <span className={ styles.dividerInner }></span>
     </div>
   </div>
-);
+)
 
 Title.propTypes = {
   title: string.isRequired,
-  subtitle: string.isRequired
-};
+  subtitle: string.isRequired,
+}
 
-export default Title;
+export default Title

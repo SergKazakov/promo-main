@@ -1,35 +1,5 @@
 import styles from "./index.css"
-
-const links = [
-  {
-    title: "home",
-    url: "/",
-  },
-  {
-    title: "about us",
-    url: "/",
-  },
-  {
-    title: "portfolio",
-    url: "/",
-  },
-  {
-    title: "pricing",
-    url: "/",
-  },
-  {
-    title: "team",
-    url: "/",
-  },
-  {
-    title: "blog",
-    url: "/",
-  },
-  {
-    title: "contact",
-    url: "/",
-  },
-]
+import links from "./links.json"
 
 const Nav = () => (
   <nav className={ styles.navWrapper }>

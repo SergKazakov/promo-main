@@ -1,7 +1,10 @@
-import invariant from "invariant";
-import { BodyContainer, joinUri } from "phenomic";
-import Blog from "../../Blog";
-import Promo from "../../Promo";
+import invariant from "invariant"
+import { joinUri } from "phenomic"
+import Hero from "../../Hero"
+import Contact from "../../Contact"
+import Clients from "../../Clients"
+import Blog from "../../Blog"
+import Promo from "../../Promo"
 
 const {
   oneOfType,
@@ -20,7 +23,6 @@ const Page = (props, { metadata }) => {
     __filename,
     __url,
     head,
-    body,
   } = props
 
   invariant(
@@ -51,7 +53,10 @@ const Page = (props, { metadata }) => {
         title={ metaTitle }
         meta={ meta }
       />
+      <Hero />
+      <Clients />
       <Blog />
+      <Contact />
       <Promo />
     </div>
   )
