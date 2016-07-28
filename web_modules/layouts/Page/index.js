@@ -1,6 +1,7 @@
 import invariant from "invariant"
 import { joinUri } from "phenomic"
 import Hero from "../../Hero"
+import Features from "../../Features"
 import Contact from "../../Contact"
 import Clients from "../../Clients"
 import Blog from "../../Blog"
@@ -54,6 +55,7 @@ const Page = (props, { metadata }) => {
         meta={ meta }
       />
       <Hero />
+      <Features />
       <Clients />
       <Blog />
       <Contact />

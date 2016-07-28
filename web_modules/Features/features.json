@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "glasses",
+    "title": "SLEEK DESIGN",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry."
+  },
+  {
+    "icon": "heart",
+    "title": "CLEAN CODE",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry."
+  },
+  {
+    "icon": "lamp",
+    "title": "CREATIVE IDEAS",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry."
+  },
+  {
+    "icon": "chat",
+    "title": "FREE SUPPORT",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry."
+  }
+]

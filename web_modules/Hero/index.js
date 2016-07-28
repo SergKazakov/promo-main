@@ -5,7 +5,7 @@ const Hero = () => (
   <section className={ styles.hero }>
     <Svg
       className={ styles.anchor }
-      svg={ require('./anchor.svg') }
+      svg={ require("./anchor.svg") }
       width="2.4rem"
       height="3.2rem"
     />
