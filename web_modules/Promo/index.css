@@ -1,0 +1,38 @@
+.promoWrapper {
+  height: 48rem;
+  background: url(./promo.jpg) center / cover no-repeat rgba(0,0,0,0.6);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+  }
+}
+
+.promo {
+  position: relative;
+  z-index: 1;
+}
+
+.title,
+.subtitle {
+  color: #fff;
+  font-weight: normal;
+  margin: 0.5rem 0;
+}
+
+.title {
+  font-size: 3.6rem;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+}

@@ -63,9 +63,7 @@ export const makeConfig = (config = {}) => {
         },
         {
           test: /\.(html|ico|jpe?g|png|gif)$/,
-          loader: "file-loader" +
-            "?name=[path][name].[hash].[ext]&context=" +
-            path.join(__dirname, config.source),
+          loader: 'url?limit=8192&name=[sha512:hash:base64:7].[ext]'
         },
         {
           test: /\.svg$/,

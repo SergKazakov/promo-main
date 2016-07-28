@@ -1,5 +1,6 @@
 import invariant from "invariant"
 import { BodyContainer, joinUri } from "phenomic"
+import Promo from '../../Promo';
 
 const {
   oneOfType,
@@ -51,6 +52,7 @@ const Page = (props, { metadata }) => {
       />
       <BodyContainer>{ body }</BodyContainer>
       { props.children }
+      <Promo />
     </div>
   )
 }
