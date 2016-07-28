@@ -1,0 +1,30 @@
+.aboutWrapper {
+  padding: 14.5rem 0;
+  border-top: 1px solid #d8d9db;
+}
+
+.about {
+  composes: inner from '../LayoutContainer/index.css';
+  display: flex;
+}
+
+.content {
+  padding: 0 0 0 7.5rem;
+}
+
+.title {
+  font-size: 3.6rem;
+  color: #6a6a6a;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0 0 0 3.5rem;
+  border-left: 6px solid #e74c3c;
+  margin: 0;
+}
+
+.text {
+  font-size: 1.4rem;
+  color: #999;
+  line-height: 2;
+  margin: 3rem 0;
+}
