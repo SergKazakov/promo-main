@@ -1,4 +1,4 @@
-import styles from './index.css';
+import styles from "./index.css"
 
 const Promo = () => (
   <section className={  styles.promoWrapper }>
@@ -17,6 +17,6 @@ const Promo = () => (
       </h4>
     </div>
   </section>
-);
+)
 
-export default Promo;
+export default Promo

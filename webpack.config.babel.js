@@ -63,7 +63,7 @@ export const makeConfig = (config = {}) => {
         },
         {
           test: /\.(html|ico|jpe?g|png|gif)$/,
-          loader: 'url?limit=8192&name=[sha512:hash:base64:7].[ext]'
+          loader: "url?limit=8192&name=[sha512:hash:base64:7].[ext]",
         },
         {
           test: /\.svg$/,
@@ -105,6 +105,7 @@ export const makeConfig = (config = {}) => {
           formats: "woff2 woff",
         }),
         require("css-mqpacker"),
+        require("postcss-triangle"),
         require("postcss-sorting")({ "sort-order": "yandex" }),
       ]
     },
