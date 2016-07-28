@@ -1,18 +1,12 @@
-import React, { Component, PropTypes } from "react"
+import Nav from "../Nav"
 import styles from "./index.css"
 
-export default class Header extends Component {
+const Header = () => (
+  <header className={ styles.headerWrapper }>
+    <div className={ styles.header }>
+      <Nav />
+    </div>
+  </header>
+)
 
-  static contextTypes = {
-    metadata: PropTypes.object.isRequired,
-  };
-
-  render() {
-    return (
-      <header className={ styles.header }>
-        <nav className={ styles.nav }>
-        </nav>
-      </header>
-    )
-  }
-}
+export default Header
