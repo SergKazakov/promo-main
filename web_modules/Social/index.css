@@ -1,0 +1,22 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.socialItem {
+  & + & {
+    margin-left: 2rem;
+  }
+}
+
+.socialLink,
+.socialSvg {
+  display: block;
+}
+
+.socialSvg {
+  fill: #999;
+  &:hover {
+    fill: #e74c3c;
+  }
+}

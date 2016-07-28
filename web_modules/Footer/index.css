@@ -1,16 +1,16 @@
+.footerWrapper {
+  background: #202020;
+  padding: 3.5rem 0;
+}
+
 .footer {
-  margin-top: 1rem;
-  padding: 1rem;
-  font-size: 0.75rem;
-  text-align: center;
+  composes: inner from '../LayoutContainer/index.css';
+  display: flex;
+  align-items: center;
 }
 
-.link {
-  opacity: 0.4;
-  color: inherit;
-  text-decoration: none;
-}
-
-.reference {
-  font-weight: 100;
+.copyright {
+  font-size: 1.4rem;
+  color: #999;
+  margin: 0 0 0 auto;
 }
