@@ -75,6 +75,7 @@
     "json-loader": "^0.5.2",
     "npm-run-all": "^1.7.0",
     "phenomic": "^0.15.0",
+    "postcss-center": "^1.0.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-font-magician": "^1.4.0",
     "postcss-import": "^8.1.2",

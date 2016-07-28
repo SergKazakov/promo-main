@@ -1,4 +1,20 @@
 .hero {
   height: 100vh;
   background: url(./hero.jpg) center / cover no-repeat;
+  text-align: center;
+}
+
+.anchor {
+  width: 6.4rem;
+  height: 6.4rem;
+  background: #f4f5f9;
+  border-radius: 50%;
+  color: #e74c3c;
+  top: calc(100% - 3.7rem);
+  left: center;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  & svg {
+    top: center;
+    left: center;
+  }
 }

@@ -106,6 +106,7 @@ export const makeConfig = (config = {}) => {
         }),
         require("css-mqpacker"),
         require("postcss-triangle"),
+        require("postcss-center"),
         require("postcss-sorting")({ "sort-order": "yandex" }),
       ]
     },

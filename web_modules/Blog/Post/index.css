@@ -42,10 +42,8 @@
     width: 2.5rem;
     height: 7rem;
     background-color: #e74e3e;
-    position: absolute;
     right: 100%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: center;
   }
 }
 
