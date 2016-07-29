@@ -22,7 +22,7 @@
   align-items: center;
   width: calc(665 / 1200 * 100%);
   top: center;
-  left: 0;
+  left: 1.5rem;
 }
 
 .listTitle {
