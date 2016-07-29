@@ -4,6 +4,7 @@ import Hero from "../../Hero"
 import Features from "../../Features"
 import About from "../../About"
 import Contact from "../../Contact"
+import Pricing from "../../Pricing"
 import Clients from "../../Clients"
 import Blog from "../../Blog"
 import Promo from "../../Promo"
@@ -58,6 +59,7 @@ const Page = (props, { metadata }) => {
       <Hero />
       <Features />
       <About />
+      <Pricing />
       <Clients />
       <Blog />
       <Contact />

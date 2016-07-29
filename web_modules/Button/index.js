@@ -16,11 +16,11 @@ const Button = ({ type="primary", to, children }) => {
 
   if (isLink) return <Link { ...props }>{ children }</Link>
 
-  return <Button { ...props }>{ children }</Button>
+  return <button { ...props }>{ children }</button>
 }
 
 Button.propTypes = {
-  type: oneOf([ "primary", "ghost" ]),
+  type: oneOf([ "primary", "gray", "ghost" ]),
   to: string,
 }
 

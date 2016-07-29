@@ -1,34 +1,47 @@
+:root {
+  --white: #fff;
+  --primaryColor: #e74c3c;
+  --grayColor: #999;
+}
+
 .btn {
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
   text-transform: uppercase;
-  border: 1px solid;
   font-size: 1.4rem;
-  color: #fff;
+  color: var(--white);
   text-align: center;
   border-radius: 0.5rem;
   padding: 1.75rem 4rem;
   font-weight: bold;
   outline: none;
   transition: color 300ms, background 300ms, border-color 300ms;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
 }
 
 .primary,
-.ghost {
+.ghost,
+.gray {
   composes: btn;
 }
 
 .primary {
-  background: #e74c3c;
-  border-color: #e74c3c;
-  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+  background: var(--primaryColor);
   &:hover {
-    background: color(#e74c3c blackness(20%));
+    background: color(var(--primaryColor) blackness(20%));
+  }
+}
+
+.gray {
+  background: var(--grayColor);
+  &:hover {
+    background: color(var(--grayColor) lightness(65%));
   }
 }
 
 .ghost {
   background: transparent;
-  border-color: #fff;
+  border: 1px solid var(--white);
+  box-shadow: none;
 }

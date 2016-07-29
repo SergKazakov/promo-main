@@ -1,0 +1,36 @@
+[
+  {
+    "title": "starter",
+    "price": "19",
+    "list": [
+      "Competition Analysis Methods",
+      "All Ranked URLs",
+      "International Support System",
+      "Social Media Tracking"
+    ],
+    "url": "/"
+  },
+  {
+    "title": "premium",
+    "price": "39",
+    "list": [
+      "Competition Analysis Methods",
+      "All Ranked URLs",
+      "International Support System",
+      "Social Media Tracking"
+    ],
+    "url": "/",
+    "type": "premium"
+  },
+  {
+    "title": "business",
+    "price": "99",
+    "list": [
+      "Competition Analysis Methods",
+      "All Ranked URLs",
+      "International Support System",
+      "Social Media Tracking"
+    ],
+    "url": "/"
+  }
+]

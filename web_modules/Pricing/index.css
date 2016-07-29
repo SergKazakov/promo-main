@@ -1,0 +1,12 @@
+.pricingWrapper {
+  padding: 15rem 0 14.5rem;
+}
+
+.pricing {
+  composes: inner from '../LayoutContainer/index.css';
+}
+
+.list {
+  display: flex;
+  margin: 0 -0.8rem;
+}
