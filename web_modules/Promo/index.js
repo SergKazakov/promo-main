@@ -1,3 +1,4 @@
+import Button from "../Button"
 import styles from "./index.css"
 
 const Promo = () => (
@@ -15,6 +16,7 @@ const Promo = () => (
           `
         }
       </h4>
+      <Button>{ 'Start free trial' }</Button>
     </div>
   </section>
 )

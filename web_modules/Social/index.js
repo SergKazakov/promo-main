@@ -5,8 +5,7 @@ import social from "./social.json"
 const Social = () => (
   <ul className={ styles.social }>
     {
-      social.map(({ name, url }, index) => {
-        return (
+      social.map(({ name, url }, index) => (
           <li key={ index } className={ styles.socialItem }>
             <a href={ url } className={ styles.socialLink }>
               <Svg
@@ -17,7 +16,7 @@ const Social = () => (
             </a>
           </li>
         )
-      })
+      )
     }
   </ul>
 )

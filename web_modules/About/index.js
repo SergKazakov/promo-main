@@ -1,3 +1,4 @@
+import Button from "../Button"
 import styles from "./index.css"
 
 const About = () => (
@@ -27,6 +28,7 @@ const About = () => (
             like Aldus PageMaker including versions of Lorem Ipsum.`
           }
         </p>
+        <Button>{ 'Browse our work' }</Button>
       </div>
     </div>
   </section>

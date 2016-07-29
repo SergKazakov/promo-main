@@ -39,7 +39,13 @@
       "eslint-config-i-am-meticulous/react"
     ],
     "rules": {
-      "react/prefer-stateless-function": 0
+      "react/prefer-stateless-function": 0,
+      "react/prop-types": [
+        1,
+        {
+          "ignore": ["children"]
+        }
+      ]
     },
     "globals": {
       "React": false,

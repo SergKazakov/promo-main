@@ -26,13 +26,14 @@
 .subtitle {
   color: #fff;
   font-weight: normal;
-  margin: 0.5rem 0;
 }
 
 .title {
   font-size: 3.6rem;
+  margin: 0.5rem 0;
 }
 
 .subtitle {
   font-size: 1.8rem;
+  margin: 0.5rem 0 6rem;
 }
