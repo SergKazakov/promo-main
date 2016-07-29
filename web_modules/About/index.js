@@ -28,7 +28,7 @@ const About = () => (
             like Aldus PageMaker including versions of Lorem Ipsum.`
           }
         </p>
-        <Button>{ 'Browse our work' }</Button>
+        <Button to="/">{ 'Browse our work' }</Button>
       </div>
     </div>
   </section>

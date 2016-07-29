@@ -16,7 +16,7 @@ const Promo = () => (
           `
         }
       </h4>
-      <Button>{ 'Start free trial' }</Button>
+      <Button to="/">{ 'Start free trial' }</Button>
     </div>
   </section>
 )
