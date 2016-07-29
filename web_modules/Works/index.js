@@ -16,7 +16,7 @@ const Works = () => (
       {
         nav.map(({ title }, index) => (
           <li key={ index } className={ styles.navItem }>
-            <a href="#" className={ styles.navLink }>
+            <a href="#" data-title={ title } className={ styles.navLink }>
               { title }
             </a>
           </li>

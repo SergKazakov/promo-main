@@ -20,9 +20,20 @@
 
 .navLink {
   color: inherit;
+  position: relative;
   &:hover {
+    color: #fff;
+  }
+  &:hover::before {
+    visibility: visible;
+  }
+  &::before {
+    content: attr(data-title);
+    visibility: hidden;
+    left: center;
     font-weight: bold;
     color: #e74c3c;
+    white-space: nowrap;
   }
 }
 

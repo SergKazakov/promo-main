@@ -6,9 +6,13 @@ const Nav = () => (
     <ul className={ styles.nav }>
       {
         links.map(({ title, url }, index) => {
+          const props = {
+            className: styles.navLink,
+          }
+          
           return (
             <li key={ index } className={ styles.navItem }>
-              <a className={ styles.navLink } href={ url }>{ title }</a>
+              <a { ...props } data-title={ title } href={ url }>{ title }</a>
             </li>
           )
         })
