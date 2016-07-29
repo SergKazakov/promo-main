@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "heart",
+    "amount": "3891",
+    "text": "User Favourites"
+  },
+  {
+    "icon": "label",
+    "amount": "281K",
+    "text": "Posts Last 24 Hours"
+  },
+  {
+    "icon": "thumb",
+    "amount": "618",
+    "text": "Total Posts"
+  },
+  {
+    "icon": "star",
+    "amount": "178",
+    "text": "Campaigns"
+  },
+  {
+    "icon": "bookmark",
+    "amount": "285",
+    "text": "Amazing Features"
+  }
+]
