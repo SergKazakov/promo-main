@@ -62,7 +62,7 @@ export const makeConfig = (config = {}) => {
           ),
         },
         {
-          test: /\.(html|ico|jpe?g|png|gif)$/,
+          test: /\.(html|ico|jpg|png|gif)$/,
           loader: "url?limit=8192&name=[sha512:hash:base64:7].[ext]",
         },
         {

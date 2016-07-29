@@ -15,19 +15,18 @@ const Blog = () => (
     />
     <div className={ styles.blog }>
       {
-        posts.map(({ isReverse, category, title, text, url }, index) => {
-          return (
+        posts.map(({ isReverse, category, title, text, url }, index) => (
             <Post
               key={ index }
               isReverse={ isReverse }
-              src={ require(`./blog-${++index}.jpg`) }
+              src={ require(`./${++index}.jpg`) }
               category={ category }
               title={ title }
               text={ text }
               url={ url }
             />
           )
-        })
+        )
       }
     </div>
   </section>
