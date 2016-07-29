@@ -1,0 +1,55 @@
+.wrapper {
+  padding: 15rem 0;
+  background: #f4f5f9;
+}
+
+.inner {
+  composes: inner from '../LayoutContainer/index.css';
+  display: flex;
+  position: relative;
+}
+
+.img {
+  margin: 0 0 0 auto;
+}
+
+.list {
+  background: #fff;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 8rem 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(665 / 1200 * 100%);
+  top: center;
+  left: 0;
+}
+
+.listTitle {
+  composes: title from '../Features/Feature/index.css';
+}
+
+.listIcon {
+  width: 7.3rem;
+  height: 7.3rem;
+  border-radius: 0.3rem;
+  transform: rotate(45deg);
+  color: #fff;
+  background: #e74c3c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 5rem;
+  & svg {
+    transform: rotate(-45deg);
+  }
+}
+
+.listText {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #999;
+  line-height: 2;
+  margin: 2.5rem 0 4.5rem;
+}
