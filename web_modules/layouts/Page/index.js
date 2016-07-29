@@ -3,6 +3,7 @@ import { joinUri } from "phenomic"
 import Hero from "../../Hero"
 import Features from "../../Features"
 import About from "../../About"
+import Services from "../../Services"
 import Contact from "../../Contact"
 import Stats from "../../Stats"
 import Pricing from "../../Pricing"
@@ -60,6 +61,7 @@ const Page = (props, { metadata }) => {
       <Hero />
       <Features />
       <About />
+      <Services />
       <Stats />
       <Pricing />
       <Clients />

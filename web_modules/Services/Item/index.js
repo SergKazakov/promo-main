@@ -5,22 +5,22 @@ const {
   string,
 } = React.PropTypes
 
-const Item = ({ icon, amount, text }) => (
+const Item = ({ title, text, icon }) => (
   <div className={ styles.wrapper }>
+    <h3 className={ styles.title }>{ title }</h3>
+    <p className={ styles.text }>{ text }</p>
     <Svg
       className={ styles.icon }
       svg={ icon }
-      width="3rem"
+      width="2.6rem"
     />
-    <h3 className={ styles.amount }>{ amount }</h3>
-    <p className={ styles.text }>{ text }</p>
   </div>
 )
 
 Item.propTypes = {
-  icon: string.isRequired,
-  amount: string.isRequired,
+  title: string.isRequired,
   text: string.isRequired,
+  icon: string.isRequired,
 }
 
 export default Item

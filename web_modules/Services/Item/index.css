@@ -1,0 +1,35 @@
+.wrapper {
+  margin: 0 0 6.5rem;
+  position: relative;
+}
+
+.title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 0 0 1rem;
+}
+
+.text {
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #999;
+  margin: 0 0 0 30%;
+}
+
+.icon {
+  width: 6.4rem;
+  height: 6.4rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -11rem;
+  top: 1.5rem;
+  color: #e74c3c;
+}

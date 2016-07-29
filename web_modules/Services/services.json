@@ -1,0 +1,17 @@
+[
+  {
+    "title": "WEB DESIGN",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+    "icon": "tv"
+  },
+  {
+    "title": "PRINT DESIGN",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+    "icon": "paper"
+  },
+  {
+    "title": "PHOTOGRAPHY",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+    "icon": "photo"
+  }
+]
