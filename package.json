@@ -59,9 +59,14 @@
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
-      "selector-pseudo-class-no-unknown": [true, {
-        "ignorePseudoClasses": ["global"]
-      }]
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ]
     }
   },
   "devDependencies": {
@@ -112,6 +117,7 @@
     "whatwg-fetch": "^0.11.0"
   },
   "dependencies": {
+    "muicss": "^0.6.8",
     "normalize.css": "^4.2.0",
     "react-slick": "^0.12.2",
     "slick-carousel": "^1.6.0"

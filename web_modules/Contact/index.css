@@ -29,7 +29,10 @@
   font-weight: bold;
   color: #e74e3e;
   font-size: 2.4rem;
-  margin: 6rem 0 2rem;
+  margin: 0 0 2rem;
+  &:not(:first-child) {
+    margin-top: 6rem;
+  }
 }
 
 .text {
@@ -46,4 +49,15 @@
 .form {
   width: calc(665 / 1170 * 100%);
   padding: 10rem;
+}
+
+:global(.mui-textfield) {
+  margin: 0 0 3rem;
+}
+
+:global(.mui-textfield--float-label > label) {
+  font-size: 1.4rem;
+  color: #999;
+  font-weight: bold;
+  overflow: visible;
 }
