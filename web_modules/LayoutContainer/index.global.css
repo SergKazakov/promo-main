@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "slick-carousel/slick/slick.css";
 
 html {
   box-sizing: border-box;
@@ -28,4 +29,11 @@ a {
 
 svg {
   fill: currentColor;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }

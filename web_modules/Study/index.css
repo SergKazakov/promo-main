@@ -16,13 +16,42 @@
 .list {
   background: #fff;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
-  padding: 8rem 5rem 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: calc(665 / 1200 * 100%);
   top: center;
   left: 1.5rem;
+  padding: 0 5rem;
+  & :global(.slick-track) {
+    display: flex;
+  }
+  & :global(.slick-slide) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 0 11rem;
+    height: auto;
+  }
+  & :global(.slick-dots) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5rem;
+    display: flex !important;
+    justify-content: center;
+  }
+  & :global(.slick-dots li) {
+    margin: 0 0.4rem;
+  }
+  & :global(.slick-dots button) {
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: #f4f5f9;
+    font-size: 0;
+    display: block;
+  }
+  & :global(.slick-dots .slick-active button) {
+    background: #e74c3c;
+  }
 }
 
 .listTitle {
@@ -52,4 +81,8 @@
   color: #999;
   line-height: 2;
   margin: 2.5rem 0 4.5rem;
+}
+
+.listFooter {
+  margin-top: auto;
 }
