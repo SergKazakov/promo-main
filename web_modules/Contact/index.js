@@ -44,7 +44,7 @@ const Contact = () => (
         <Input label="Name" floatingLabel required />
         <Input type="email" label="Email" floatingLabel required />
         <Input label="Subject" floatingLabel required />
-        <Textarea rows="0" label="Message" floatingLabel required />
+        <Textarea rows={ 0 } label="Message" floatingLabel required />
         <Button>{ 'send message' }</Button>
       </form>
     </div>

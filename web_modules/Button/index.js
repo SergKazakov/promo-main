@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import classnames from "classnames"
 import styles from "./index.css"
 
 const {
@@ -6,11 +7,11 @@ const {
   oneOf,
 } = React.PropTypes
 
-const Button = ({ type="primary", to, children }) => {
+const Button = ({ type="primary", to, className, children }) => {
   const isLink = to && to !== undefined
 
   const props = {
-    className: styles[type],
+    className: classnames(styles[type], className),
     ...isLink && { to },
   }
 

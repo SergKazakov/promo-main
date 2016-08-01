@@ -1,7 +1,79 @@
 .hero {
   height: 100vh;
-  background: url(./hero.jpg) center / cover no-repeat;
+}
+
+.slider {
+  & :global(.slick-prev),
+  & :global(.slick-next) {
+    background: #716b65;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 0.3rem;
+    top: center;
+    transition: background 300ms;
+    font-size: 0;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  & :global(.slick-prev:hover),
+  & :global(.slick-next:hover) {
+    background: #e74c3c;
+    color: #fff;
+  }
+  & :global(.slick-prev svg),
+  & :global(.slick-next svg) {
+    transition: all 300ms;
+  }
+  & :global(.slick-prev) {
+    left: 5rem;
+  }
+  & :global(.slick-next) {
+    right: 5rem;
+  }
+}
+
+.slide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-size: 7.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  margin: 4.5rem 0;
+}
+
+.subtitle {
+  font-size: 2.4rem;
+  color: #f4f5f9;
+  margin: 0;
+  font-weight: normal;
+}
+
+.text {
+  font-size: 1.4rem;
+  color: #cbc6c0;
+  line-height: 1.6;
+  max-width: 60rem;
+  margin: 4rem 0 7rem;
   text-align: center;
+}
+
+.footer {
+  display: flex;
+}
+
+.btn {
+  margin: 0 1.5rem;
 }
 
 .anchor {
@@ -10,9 +82,9 @@
   background: #f4f5f9;
   border-radius: 50%;
   color: #e74c3c;
-  top: calc(100% - 3.7rem);
+  top: calc(100% - 3.2rem);
   left: center;
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.5);
   & svg {
     top: center;
     left: center;

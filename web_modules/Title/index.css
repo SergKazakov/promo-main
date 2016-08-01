@@ -17,32 +17,3 @@
   font-weight: normal;
   margin: 2rem 0;
 }
-
-.divider {
-  margin: 2rem 0;
-  text-align: center;
-}
-
-.dividerInner {
-  width: 0.7rem;
-  height: 0.7rem;
-  background: #e74c3c;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  &::before,
-  &::after {
-    content: '';
-    top: center;
-    height: 1px;
-    background: #999;
-    width: 8rem;
-  }
-  &::before {
-    right: calc(100% + 1.4rem);
-  }
-  &::after {
-    left: calc(100% + 1.4rem);
-  }
-}

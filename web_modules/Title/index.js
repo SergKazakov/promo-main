@@ -1,3 +1,4 @@
+import Divider from "../Divider"
 import styles from "./index.css"
 
 const {
@@ -12,9 +13,7 @@ const Title = ({ title, subtitle }) => (
     <h3 className={ styles.subtitle }>
       { subtitle }
     </h3>
-    <div className={ styles.divider }>
-      <span className={ styles.dividerInner }></span>
-    </div>
+    <Divider />
   </div>
 )
 

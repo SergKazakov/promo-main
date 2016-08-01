@@ -1,4 +1,22 @@
-.clientsWrapper {
+.wrapper {
   background: #f4f5f9;
   padding: 14rem 0;
+}
+
+.list {
+  composes: inner from '../LayoutContainer/index.css';
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.listItem {
+  width: calc(210 / 1170 * 100%);
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin: 0 0 3rem;
 }
