@@ -1,8 +1,6 @@
 .statsWrapper {
-  height: 51.1rem;
   background: url(./stats.jpg) center / cover no-repeat;
   position: relative;
-  padding: 15rem 0 0;
   &::before {
     content: '';
     position: absolute;
@@ -12,11 +10,28 @@
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
   }
+
+  @media (--tablet) {
+    padding: 10rem 0 4rem;
+  }
+
+  @media (--desktop) {
+    height: 51.1rem;
+    padding: 15rem 0 0;
+  }
 }
 
 .stats {
   composes: inner from '../LayoutContainer/index.css';
   position: relative;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (--tablet) {
+    justify-content: space-around;
+  }
+
+  @media (--desktop) {
+    justify-content: space-between;
+  }
 }

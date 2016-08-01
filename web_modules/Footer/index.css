@@ -5,12 +5,23 @@
 
 .footer {
   composes: inner from '../LayoutContainer/index.css';
-  display: flex;
-  align-items: center;
+
+  @media (--noMobile) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .copyright {
   font-size: 1.4rem;
   color: #999;
-  margin: 0 0 0 auto;
+
+  @media (--mobile) {
+    text-align: center;
+    margin: 3rem 0 1rem;
+  }
+
+  @media (--noMobile) {
+    margin: 0 0 0 auto;
+  }
 }

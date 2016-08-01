@@ -4,6 +4,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (--desktop) {
+    width: 25%;
+  }
+
+  @media (--tablet) {
+    width: 50%;
+  }
+
   &:hover {
     & .icon {
       transform: rotate(45deg);

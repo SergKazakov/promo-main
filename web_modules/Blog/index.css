@@ -5,6 +5,8 @@
 }
 
 .blog {
-  display: flex;
-  flex-wrap: wrap;
+  @media (--desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

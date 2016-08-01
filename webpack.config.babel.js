@@ -100,6 +100,17 @@ export const makeConfig = (config = {}) => {
         }),
         require("postcss-cssnext")({
           browsers: "last 2 versions",
+          features: {
+            customMedia: {
+              extensions: {
+                "--desktop": "(min-width: 1025px)",
+                "--tablet": "(min-width: 768px) and (max-width: 1024px)",
+                "--mobile": "(max-width: 767px)",
+                "--noDesktop": "(max-width: 1024px)",
+                "--noMobile": "(min-width: 768px)",
+              },
+            },
+          },
         }),
         require("postcss-font-magician")({
           formats: "woff2 woff",

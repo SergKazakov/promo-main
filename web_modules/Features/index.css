@@ -7,6 +7,12 @@
 }
 
 .featuresInner {
-  display: flex;
-  margin: 0 -2.5rem;
+  @media (--noMobile) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (--desktop) {
+    margin: 0 -2.5rem;
+  }
 }

@@ -1,6 +1,5 @@
 @import "normalize.css";
 @import "slick-carousel/slick/slick.css";
-@import "muicss/lib/css/mui.css";
 
 html {
   box-sizing: border-box;
@@ -45,4 +44,8 @@ button {
 
 textarea {
   resize: none;
+}
+
+img {
+  max-width: 100%;
 }

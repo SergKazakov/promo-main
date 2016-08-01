@@ -1,6 +1,13 @@
 .wrapper {
-  width: calc(100% / 3);
   padding: 0 0.8rem;
+
+  @media (--tablet) {
+    width: 50%;
+  }
+
+  @media (--desktop) {
+    width: calc(100% / 3);
+  }
 }
 
 .inner {
@@ -17,6 +24,10 @@
 }
 
 .premiumWrapper {
+  @media (--tablet) {
+    order: 3;
+    margin: 1.6rem 0 0;
+  }
   & .header {
     background: #e74c3c;
   }

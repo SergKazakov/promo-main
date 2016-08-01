@@ -45,13 +45,21 @@
 .listItem {
   display: block;
   height: 0;
-  width: 25%;
-  padding-bottom: 25%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   &:hover .overlay {
     opacity: 1;
+  }
+
+  @media (--tablet) {
+    width: calc(100% / 3);
+    padding-bottom: calc(100% / 3);
+  }
+
+  @media (--desktop) {
+    width: 25%;
+    padding-bottom: 25%;
   }
 }
 
@@ -68,6 +76,9 @@
   flex-direction: column;
   opacity: 0;
   transition: opacity 500ms;
+  &:hover {
+    color: #fff;
+  }
 }
 
 .title {

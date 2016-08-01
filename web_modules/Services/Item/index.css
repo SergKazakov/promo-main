@@ -16,7 +16,14 @@
   font-size: 1.4rem;
   line-height: 2;
   color: #999;
-  margin: 0 0 0 30%;
+
+  @media (--tablet) {
+    margin: 0 0 0 5rem;
+  }
+
+  @media (--desktop) {
+    margin: 0 0 0 30%;
+  }
 }
 
 .icon {
@@ -30,11 +37,18 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: -3.2rem;
   top: 1.5rem;
   color: #e74c3c;
   opacity: 0;
   transition: opacity 300ms;
+
+  @media (--tablet) {
+    right: -1.5rem;
+  }
+
+  @media (--desktop) {
+    right: -3.2rem;
+  }
 }
 
 :global(.slick-active) .icon {

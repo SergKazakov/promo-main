@@ -2,8 +2,8 @@ import Button from "../Button"
 import styles from "./index.css"
 
 const Promo = () => (
-  <section className={  styles.promoWrapper }>
-    <div className={ styles.promo }>
+  <section className={  styles.wrapper }>
+    <div className={ styles.inner }>
       <h3 className={ styles.title }>
         { "Let's Get Started Now." } <b>{ "It's FREE" }</b>
       </h3>

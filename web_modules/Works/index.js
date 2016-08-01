@@ -1,4 +1,5 @@
 import Title from "../Title"
+import { Link } from "react-router"
 import styles from "./index.css"
 import nav from "./nav.json"
 import works from "./works.json"
@@ -37,10 +38,10 @@ const Works = () => (
 
           return (
             <li key={ index } { ...props }>
-              <a href={ url } className={ styles.overlay }>
+              <Link to={ url } className={ styles.overlay }>
                 <h3 className={ styles.title }>{ title }</h3>
                 <span className={ styles.category }>{ category }</span>
-              </a>
+              </Link>
             </li>
           )
         })

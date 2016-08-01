@@ -1,49 +1,99 @@
 .wrapper {
-  width: 50%;
-  display: flex;
-}
+  @media (--mobile) {
+    position: relative;
+    &:hover .content {
+      opacity: 1;
+    }
+  }
 
-.reverseWrapper {
-  composes: wrapper;
-  & .img {
-    order: 2;
+  @media (--noMobile) {
+    display: flex;
   }
-  & .content {
-    order: 1;
+
+  @media (--tablet) {
+    &:nth-child(even) {
+      & .img {
+        order: 2;
+      }
+      & .content {
+        order: 1;
+      }
+      & .content::before {
+        right: auto;
+        left: 100%;
+        border-width: 3.5rem 0 3.5rem 2.5rem;
+        border-left-color: #e74e3e;
+      }
+    }
   }
-  & .content::before {
-    right: auto;
-    left: 100%;
-    border-width: 3.5rem 0 3.5rem 2.5rem;
-    border-left-color: #e74e3e;
+
+  @media (--desktop) {
+    width: 50%;
+    &:nth-child(3),
+    &:nth-child(4) {
+      & .img {
+        order: 2;
+      }
+      & .content {
+        order: 1;
+      }
+      & .content::before {
+        right: auto;
+        left: 100%;
+        border-width: 3.5rem 0 3.5rem 2.5rem;
+        border-left-color: #e74e3e;
+      }
+    }
   }
 }
 
 .img,
 .content {
-  width: 50%;
+  @media (--noMobile) {
+    width: 50%;
+  }
 }
 
 .img {
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (--mobile) {
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+  }
 }
 
 .content {
-  background: #e74e3e;
   color: #fff;
   padding: 7rem 5rem;
   display: flex;
   flex-direction: column;
-  position: relative;
-  &::before {
-    content: '';
-    triangle: pointing-left;
-    width: 2.5rem;
-    height: 7rem;
-    background-color: #e74e3e;
-    right: 100%;
-    top: center;
+
+  @media (--mobile) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 300ms;
+    background: rgba(231, 76, 60, 0.8);
+  }
+
+  @media (--noMobile) {
+    position: relative;
+    background: #e74e3e;
+    &::before {
+      content: '';
+      triangle: pointing-left;
+      width: 2.5rem;
+      height: 7rem;
+      background-color: #e74e3e;
+      right: 100%;
+      top: center;
+    }
   }
 }
 
@@ -72,7 +122,10 @@
 .text {
   font-size: 1.6rem;
   line-height: 1.6;
-  margin: 2rem 0 5rem;
+
+  @media (--noMobile) {
+    margin: 2rem 0 5rem;
+  }
 }
 
 .footer {

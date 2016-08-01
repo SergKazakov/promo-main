@@ -1,12 +1,11 @@
 import styles from "./index.css"
 
 const {
-  bool,
   string,
 } = React.PropTypes
 
-const Post = ({ isReverse=false, src, category, title, text, url }) => (
-  <div className={ isReverse ? styles.reverseWrapper : styles.wrapper }>
+const Post = ({ src, category, title, text, url }) => (
+  <div className={ styles.wrapper }>
     <div
       className={ styles.img }
       style={ { backgroundImage: `url(${src})` } }
@@ -24,7 +23,6 @@ const Post = ({ isReverse=false, src, category, title, text, url }) => (
 )
 
 Post.propTypes = {
-  isReverse: bool,
   src: string.isRequired,
   category: string.isRequired,
   title: string.isRequired,
