@@ -1,26 +1,48 @@
 import Item from "./Item"
+import Slider from "react-slick"
 import styles from "./index.css"
 import services from "./services.json"
 
-const Services = () => (
-  <section className={ styles.wrapper }>
-    <div className={ styles.content }>
-      <h3 className={ styles.title }>{ 'Our srvices' }</h3>
-      <div className={ styles.list }>
-        {
-          services.map(({ title, text, icon }, index) => (
-            <Item
-              title={ title }
-              text={ text }
-              icon={ require(`./${icon}.svg`) }
-              key={ index }
-            />
-          ))
-        }
+const Services = () => {
+  const settings = {
+    className: styles.slider,
+    arrows: false,
+    slideToShow: 1,
+    slideToScroll: 1,
+    dots: true,
+    fade: true,
+    autoplay: true,
+    swipe: false,
+  }
+
+  return (
+    <section className={ styles.wrapper }>
+      <div className={ styles.content }>
+        <h3 className={ styles.title }>{ 'Our services' }</h3>
+        <div className={ styles.sliderWrapper }>
+          <Slider { ...settings }>
+            {
+              services.map((service, index) => (
+                <div key={ index }>
+                  {
+                    service.map(({ title, text, icon }, index) => (
+                      <Item
+                        title={ title }
+                        text={ text }
+                        icon={ require(`./${icon}.svg`) }
+                        key={ index }
+                      />
+                    ))
+                  }
+                </div>
+              ))
+            }
+          </Slider>
+        </div>
       </div>
-    </div>
-    <div className={ styles.img }></div>
-  </section>
-)
+      <div className={ styles.img }></div>
+    </section>
+  )
+}
 
 export default Services

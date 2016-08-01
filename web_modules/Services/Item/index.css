@@ -1,6 +1,7 @@
 .wrapper {
   margin: 0 0 6.5rem;
   position: relative;
+  padding: 0 8rem 0 0;
 }
 
 .title {
@@ -29,7 +30,12 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: -11rem;
+  right: -3.2rem;
   top: 1.5rem;
   color: #e74c3c;
+  visibility: hidden;
+}
+
+:global(.slick-active) .icon {
+  visibility: visible;
 }
