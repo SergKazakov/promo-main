@@ -5,7 +5,7 @@ import styles from "./index.css"
 const Header = () => (
   <header className={ styles.headerWrapper }>
     <div className={ styles.header }>
-      <Link to="/">
+      <Link className={ styles.logoWrapper } to={ "/" }>
         <img className={ styles.logo } src={ require("./logo.png") } />
       </Link>
       <Nav />

@@ -1,9 +1,14 @@
 import Header from "../Header"
 import Footer from "../Footer"
+import Menu from "../Menu"
 import "./index.global.css"
 import styles from "./index.css"
 
-const { PropTypes } = React
+const {
+  oneOfType,
+  array,
+  object,
+} = React.PropTypes
 
 const Layout = ({ children }) => (
   <div className={ styles.layout }>
@@ -14,6 +19,7 @@ const Layout = ({ children }) => (
       } ] }
     />
     <Header />
+    <Menu />
     <main className={ styles.main }>
       { children }
     </main>
@@ -22,11 +28,11 @@ const Layout = ({ children }) => (
 )
 
 Layout.propTypes = {
-  children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
+  children: oneOfType([ array, object ]),
 }
 
 Layout.contextTypes = {
-  metadata: PropTypes.object.isRequired,
+  metadata: object.isRequired,
 }
 
 export default Layout

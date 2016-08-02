@@ -1,5 +1,5 @@
 .headerWrapper {
-  padding: 4rem 0;
+  margin: 4rem 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -11,6 +11,12 @@
   composes: inner from '../LayoutContainer/index.css';
   display: flex;
   align-items: center;
+}
+
+.logoWrapper {
+  @media (--noDesktop) {
+    margin-left: auto;
+  }
 }
 
 .logo {

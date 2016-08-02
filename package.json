@@ -121,6 +121,8 @@
     "classnames": "^2.2.5",
     "muicss": "^0.6.8",
     "normalize.css": "^4.2.0",
+    "radium": "^0.18.1",
+    "react-burger-menu": "^1.9.9",
     "react-slick": "^0.12.2",
     "slick-carousel": "^1.6.0"
   }
