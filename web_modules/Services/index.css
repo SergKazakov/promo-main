@@ -22,18 +22,28 @@
 }
 
 .content {
-  text-align: right;
-  padding: 15rem 0 8.5rem;
+  @media (--noMobile) {
+    text-align: right;
+  }
+
+  @media (--desktop) {
+    padding: 15rem 0 8.5rem;
+  }
 }
 
 .title {
-  text-transform: uppercase;
-  font-weight: bold;
+  composes: title from '../About/index.css';
   color: #fff;
-  font-size: 3.6rem;
-  line-height: 1;
-  padding: 0 3.5rem 0 0;
-  border-right: 6px solid #e74c3c;
+
+  @media (--mobile) {
+    margin: 2rem 1.5rem;
+  }
+
+  @media (--noMobile) {
+    padding: 0 3.5rem 0 0;
+    border-right: 6px solid #e74c3c;
+    border-left: 0;
+  }
 
   @media (--tablet) {
     margin: 0 13rem 7rem 0;
@@ -45,19 +55,22 @@
 }
 
 .sliderWrapper {
-  @media (--tablet) {
-    padding: 0 5rem;
-  }
-
-  @media (--desktop) {
+  @media (--noMobile) {
     padding: 0 0 0 5rem;
   }
 }
 
 .slider {
+  & :global(.slick-slide) {
+    @media (--mobile) {
+      padding: 0 1.5rem;
+    }
+  }
   & :global(.slick-list) {
-    margin: 0 -3.7rem 0 0;
-    padding: 0 3.7rem 0 0;
+    @media (--desktop) {
+      margin: 0 -3.7rem 0 0;
+      padding: 0 3.7rem 0 0;
+    }
   }
   & :global(.slick-dots) {
     top: center;

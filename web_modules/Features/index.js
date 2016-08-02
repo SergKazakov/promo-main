@@ -3,9 +3,9 @@ import styles from "./index.css"
 import features from "./features.json"
 
 const Features = () => (
-  <section className={ styles.featuresWrapper }>
+  <section className={ styles.wrapper }>
     <div className={ styles.features }>
-      <div className={ styles.featuresInner }>
+      <div className={ styles.inner }>
         {
           features.map(({ icon, title, text }, index) => {
             return (

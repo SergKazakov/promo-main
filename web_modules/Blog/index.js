@@ -4,7 +4,7 @@ import styles from "./index.css"
 import posts from "./posts.json"
 
 const Blog = () => (
-  <section className={ styles.blogWrapper }>
+  <section className={ styles.wrapper }>
     <Title
       title={ 'Our blog' }
       subtitle={

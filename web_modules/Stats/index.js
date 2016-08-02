@@ -3,7 +3,7 @@ import styles from "./index.css"
 import stats from "./stats.json"
 
 const Stats = () => (
-  <section className={ styles.statsWrapper }>
+  <section className={ styles.wrapper }>
     <div className={ styles.stats }>
       {
         stats.map(({ icon, amount, text }, index) => (

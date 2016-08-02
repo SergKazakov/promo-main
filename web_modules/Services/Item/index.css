@@ -1,7 +1,27 @@
 .wrapper {
-  margin: 0 0 6.5rem;
-  position: relative;
-  padding: 0 8rem 0 0;
+  @media (--mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & + & {
+      margin-top: 2rem;
+    }
+  }
+
+  @media (--noMobile) {
+    position: relative;
+    & + & {
+      margin-top: 6.5rem;
+    }
+  }
+
+  @media (--tablet) {
+    padding: 0 13rem 0 0;
+  }
+
+  @media (--desktop) {
+    padding: 0 8rem 0 0;
+  }
 }
 
 .title {
@@ -10,12 +30,21 @@
   font-weight: bold;
   color: #e74c3c;
   margin: 0 0 1rem;
+
+  @media (--mobile) {
+    order: 2;
+  }
 }
 
 .text {
   font-size: 1.4rem;
   line-height: 2;
   color: #999;
+
+  @media (--mobile) {
+    text-align: center;
+    order: 3;
+  }
 
   @media (--tablet) {
     margin: 0 0 0 5rem;
@@ -36,14 +65,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 1.5rem;
   color: #e74c3c;
   opacity: 0;
   transition: opacity 300ms;
 
+  @media (--mobile) {
+    order: 1;
+    margin: 1rem 0 2rem;
+  }
+
+  @media (--noMobile) {
+    position: absolute;
+    top: 1.5rem;
+  }
+
   @media (--tablet) {
-    right: -1.5rem;
+    right: 3.3rem;
   }
 
   @media (--desktop) {

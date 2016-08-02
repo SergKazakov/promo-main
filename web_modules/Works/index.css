@@ -1,20 +1,35 @@
 .wrapper {
-  padding: 14rem 0 0;
+  @media (--desktop) {
+    padding: 14rem 0 0;
+  }
 }
 
 .nav {
-  display: flex;
-  justify-content: center;
   margin: 5rem 0;
+
+  @media (--noMobile) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .navItem {
   text-transform: uppercase;
   font-size: 1.4rem;
   color: #999;
-  & + &::before {
-    content: '/';
-    margin: 0 1.5rem;
+
+  @media (--mobile) {
+    text-align: center;
+    & + & {
+      margin-top: 2rem;
+    }
+  }
+
+  @media (--noMobile) {
+    & + &::before {
+      content: '/';
+      margin: 0 1.5rem;
+    }
   }
 }
 
@@ -38,8 +53,10 @@
 }
 
 .list {
-  display: flex;
-  flex-wrap: wrap;
+  @media (--noMobile) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .listItem {
@@ -50,6 +67,10 @@
   position: relative;
   &:hover .overlay {
     opacity: 1;
+  }
+
+  @media (--mobile) {
+    padding-bottom: 100%;
   }
 
   @media (--tablet) {

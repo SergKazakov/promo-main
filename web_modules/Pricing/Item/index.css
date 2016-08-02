@@ -1,5 +1,13 @@
 .wrapper {
-  padding: 0 0.8rem;
+  @media (--mobile) {
+    & + & {
+      margin-top: 1.5rem;
+    }
+  }
+
+  @media (--noMobile) {
+    padding: 0 0.8rem;
+  }
 
   @media (--tablet) {
     width: 50%;

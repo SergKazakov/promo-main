@@ -2,7 +2,7 @@ import Button from "../Button"
 import styles from "./index.css"
 
 const About = () => (
-  <section className={ styles.aboutWrapper }>
+  <section className={ styles.wrapper }>
     <div className={ styles.about }>
       <img className={ styles.img } src={ require("./about.jpg") } />
       <div className={ styles.content }>

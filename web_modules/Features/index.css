@@ -1,12 +1,14 @@
-.featuresWrapper {
-  padding: 10rem 0;
+.wrapper {
+  @media (--desktop) {
+    padding: 10rem 0;
+  }
 }
 
 .features {
   composes: inner from '../LayoutContainer/index.css';
 }
 
-.featuresInner {
+.inner {
   @media (--noMobile) {
     display: flex;
     flex-wrap: wrap;

@@ -1,27 +1,47 @@
-.contactWrapper {
+.wrapper {
   background: #f4f5f9;
-  padding: 14rem 0;
+
+  @media (--desktop) {
+    padding: 14rem 0;
+  }
 }
 
 .contact {
   composes: inner from '../LayoutContainer/index.css';
-  display: flex;
-  justify-content: space-between;
+
+  @media (--noMobile) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .aside,
 .form {
   background: #fff;
-  border-radius: 0.5rem;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+
+  @media (--mobile) {
+    padding: 2rem;
+  }
+
+  @media (--noMobile) {
+    border-radius: 0.5rem;
+  }
 }
 
 .aside {
-  width: calc(480 / 1170 * 100%);
-  padding: 0 9rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (--mobile) {
+    text-align: center;
+  }
+
+  @media (--noMobile) {
+    width: calc(480 / 1170 * 100%);
+    padding: 0 9rem;
+  }
 }
 
 .title {
@@ -47,8 +67,10 @@
 }
 
 .form {
-  width: calc(665 / 1170 * 100%);
-  padding: 10rem;
+  @media (--noMobile) {
+    width: calc(665 / 1170 * 100%);
+    padding: 10rem;
+  }
 }
 
 :global(.mui-textfield) {

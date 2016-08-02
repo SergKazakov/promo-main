@@ -4,6 +4,12 @@
   flex-direction: column;
   align-items: center;
 
+  @media (--mobile) {
+    & + & {
+      margin-top: 4rem;
+    }
+  }
+
   @media (--tablet) {
     width: calc(100% / 3);
     margin: 0 0 6rem;

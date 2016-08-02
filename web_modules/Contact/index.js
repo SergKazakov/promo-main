@@ -4,7 +4,7 @@ import { Input, Textarea } from "muicss/react"
 import styles from "./index.css"
 
 const Contact = () => (
-  <section className={ styles.contactWrapper }>
+  <section className={ styles.wrapper }>
     <Title
       title={ 'kEEP IN TOUCH' }
       subtitle={ `Nullam sit amet odio eu est aliquet euismod a a urna.

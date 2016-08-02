@@ -99,8 +99,11 @@ export const makeConfig = (config = {}) => {
           addDependencyTo: webpack,
         }),
         require("postcss-cssnext")({
-          browsers: "last 2 versions",
           features: {
+            autoprefixer: {
+              browsers: "last 2 versions",
+            },
+            rem: false,
             customMedia: {
               extensions: {
                 "--desktop": "(min-width: 1025px)",

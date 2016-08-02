@@ -1,6 +1,9 @@
 .wrapper {
   background: #f4f5f9;
-  padding: 14rem 0;
+
+  @media (--desktop) {
+    padding: 14rem 0;
+  }
 }
 
 .list {

@@ -1,5 +1,7 @@
-.pricingWrapper {
-  padding: 15rem 0 14.5rem;
+.wrapper {
+  @media (--desktop) {
+    padding: 15rem 0 14.5rem;
+  }
 }
 
 .pricing {
@@ -7,8 +9,10 @@
 }
 
 .list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 -0.8rem;
+  @media (--noMobile) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -0.8rem;
+  }
 }

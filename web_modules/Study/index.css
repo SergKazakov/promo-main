@@ -1,25 +1,43 @@
 .wrapper {
-  padding: 15rem 0;
   background: #f4f5f9;
+
+  @media (--desktop) {
+    padding: 15rem 0;
+  }
 }
 
 .inner {
   composes: inner from '../LayoutContainer/index.css';
-  display: flex;
-  position: relative;
+
+  @media (--noMobile) {
+    display: flex;
+    position: relative;
+  }
 }
 
 .img {
   margin: 0 0 0 auto;
+
+  @media (--mobile) {
+    display: none;
+  }
 }
 
 .list {
   background: #fff;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
-  width: calc(665 / 1200 * 100%);
-  top: center;
-  left: 1.5rem;
-  padding: 0 5rem;
+
+  @media (--mobile) {
+    padding: 0 1.5rem;
+  }
+
+  @media (--noMobile) {
+    width: calc(665 / 1200 * 100%);
+    top: center;
+    left: 1.5rem;
+    padding: 0 5rem;
+  }
+
   & :global(.slick-track) {
     display: flex;
   }

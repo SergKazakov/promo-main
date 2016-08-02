@@ -1,7 +1,10 @@
-.blogWrapper {
+.wrapper {
   background: #f4f5f9;
   border-top: 1px solid #d8d9db;
-  padding: 10rem 0 0;
+
+  @media (--desktop) {
+    padding: 10rem 0 0;
+  }
 }
 
 .blog {
