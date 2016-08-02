@@ -14,6 +14,7 @@ const Hero = () => {
     className: styles.slider,
     slideToShow: 1,
     slideToScroll: 1,
+    infinite: false,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
     responsive: [

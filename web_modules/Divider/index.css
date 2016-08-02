@@ -16,7 +16,6 @@
     content: '';
     top: center;
     height: 1px;
-    background: #999;
     width: 8rem;
   }
   &::before {
@@ -24,5 +23,21 @@
   }
   &::after {
     left: calc(100% + 1.4rem);
+  }
+}
+
+.dividerInnerGray {
+  composes: dividerInner;
+  &::before,
+  &::after {
+    background: #999;
+  }
+}
+
+.dividerInnerWhite {
+  composes: dividerInner;
+  &::before,
+  &::after {
+    background: #fff;
   }
 }

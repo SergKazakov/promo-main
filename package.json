@@ -17,7 +17,9 @@
   },
   "phenomic": {
     "assets": false,
-    "CNAME": true
+    "CNAME": true,
+    "open": false,
+    "devPort": 3000
   },
   "babel": {
     "presets": [
