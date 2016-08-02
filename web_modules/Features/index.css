@@ -1,7 +1,5 @@
 .wrapper {
-  @media (--desktop) {
-    padding: 10rem 0;
-  }
+  composes: wrapper from '../LayoutContainer/index.css';
 }
 
 .features {

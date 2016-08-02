@@ -2,7 +2,7 @@ import Social from "../Social"
 import styles from "./index.css"
 
 const Footer = () => (
-  <footer className={ styles.footerWrapper }>
+  <footer className={ styles.wrapper }>
     <div className={ styles.footer }>
       <Social />
       <p className={ styles.copyright }>

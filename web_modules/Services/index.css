@@ -1,8 +1,10 @@
 .wrapper {
+  composes: wrapper from '../LayoutContainer/index.css';
   background: #202020;
 
   @media (--desktop) {
     display: flex;
+    padding: 0;
   }
 }
 

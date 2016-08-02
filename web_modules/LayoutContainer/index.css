@@ -2,10 +2,30 @@
   flex-grow: 1;
 }
 
+.wrapper {
+  @media (--mobile) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (--tablet) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @media (--desktop) {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+}
+
 .inner {
-  max-width: 120rem;
   padding: 0 1.5rem;
-  margin: 0 auto;
+
+  @media (width >= 1200px) {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
 }
 
 .layout {

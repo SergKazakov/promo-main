@@ -1,9 +1,6 @@
 .wrapper {
+  composes: wrapper from '../LayoutContainer/index.css';
   background: #f4f5f9;
-
-  @media (--desktop) {
-    padding: 15rem 0;
-  }
 }
 
 .inner {

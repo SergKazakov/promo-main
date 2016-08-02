@@ -1,4 +1,5 @@
 .wrapper {
+  composes: wrapper from '../LayoutContainer/index.css';
   height: 48rem;
   background: url(./promo.jpg) center / cover no-repeat;
   position: relative;

@@ -1,7 +1,5 @@
 .wrapper {
-  @media (--desktop) {
-    padding: 15rem 0 14.5rem;
-  }
+  composes: wrapper from '../LayoutContainer/index.css';
 }
 
 .pricing {

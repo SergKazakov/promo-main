@@ -1,6 +1,14 @@
-.footerWrapper {
+.wrapper {
+  composes: wrapper from '../LayoutContainer/index.css';
   background: #202020;
-  padding: 3.5rem 0;
+
+  @media (--tablet) {
+    padding: 3.5rem 0;
+  }
+
+  @media (--desktop) {
+    padding: 3.5rem 0;
+  }
 }
 
 .footer {

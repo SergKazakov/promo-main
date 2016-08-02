@@ -1,5 +1,9 @@
-.navWrapper {
+.wrapper {
   margin-left: auto;
+
+  @media (--noDesktop) {
+    display: none;
+  }
 }
 
 .nav {

@@ -1,9 +1,6 @@
 .wrapper {
+  composes: wrapper from '../LayoutContainer/index.css';
   background: #f4f5f9;
-
-  @media (--desktop) {
-    padding: 14rem 0;
-  }
 }
 
 .list {
@@ -35,7 +32,16 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  margin: 0 0 3rem;
+
+  @media (--mobile) {
+    & + & {
+      margin-top: 3rem;
+    }
+  }
+
+  @media (--noMobile) {
+    margin: 0 0 3rem;
+  }
 
   @media (--desktop) {
     width: calc(210 / 1170 * 100%);

@@ -43,14 +43,22 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 0 1.5rem;
 }
 
 .title {
-  font-size: 7.2rem;
   text-transform: uppercase;
   font-weight: bold;
   color: #fff;
-  margin: 4.5rem 0;
+
+  @media (--mobile) {
+    font-size: 3.6rem;
+  }
+
+  @media (--noMobile) {
+    font-size: 7.2rem;
+    margin: 4.5rem 0;
+  }
 }
 
 .subtitle {
@@ -65,16 +73,36 @@
   color: #cbc6c0;
   line-height: 1.6;
   max-width: 60rem;
-  margin: 4rem 0 7rem;
   text-align: center;
+
+  @media (--mobile) {
+    margin: 2rem 0 4rem;
+  }
+
+  @media (--noMobile) {
+    margin: 4rem 0 7rem;
+  }
 }
 
 .footer {
   display: flex;
+
+  @media (--mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .btn {
-  margin: 0 1.5rem;
+  @media (--mobile) {
+    & + & {
+      margin-top: 1.5rem;
+    }
+  }
+
+  @media (--noMobile) {
+    margin: 0 1.5rem;
+  }
 }
 
 .anchor {
