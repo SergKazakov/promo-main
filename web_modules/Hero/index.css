@@ -41,7 +41,7 @@
   justify-content: center;
   align-items: center;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   padding: 0 1.5rem;
 }
