@@ -109,6 +109,7 @@ export const makeConfig = (config = {}) => {
                 "--desktop": "(min-width: 1025px)",
                 "--tablet": "(min-width: 768px) and (max-width: 1024px)",
                 "--mobile": "(max-width: 767px)",
+                "--mobile400": "(max-width: 400px)",
                 "--noDesktop": "(max-width: 1024px)",
                 "--noMobile": "(min-width: 768px)",
               },

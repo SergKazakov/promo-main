@@ -67,7 +67,6 @@
 
 .content {
   color: #fff;
-  padding: 7rem 5rem;
   display: flex;
   flex-direction: column;
 
@@ -80,9 +79,11 @@
     opacity: 0;
     transition: opacity 300ms;
     background: rgba(231, 76, 60, 0.8);
+    padding: 3rem;
   }
 
   @media (--noMobile) {
+    padding: 7rem 5rem;
     position: relative;
     background: #e74e3e;
     &::before {
@@ -122,6 +123,10 @@
 .text {
   font-size: 1.6rem;
   line-height: 1.6;
+
+  @media (--mobile400) {
+    display: none;
+  }
 
   @media (--noMobile) {
     margin: 2rem 0 5rem;

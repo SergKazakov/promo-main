@@ -46,6 +46,11 @@
   padding: 0 1.5rem;
 }
 
+.title,
+.subtitle {
+  text-align: center;
+}
+
 .title {
   text-transform: uppercase;
   font-weight: bold;
@@ -66,6 +71,10 @@
   color: #f4f5f9;
   margin: 0;
   font-weight: normal;
+
+  @media (--mobile400) {
+    display: none;
+  }
 }
 
 .text {
@@ -74,6 +83,10 @@
   line-height: 1.6;
   max-width: 60rem;
   text-align: center;
+
+  @media (--mobile400) {
+    display: none;
+  }
 
   @media (--mobile) {
     margin: 2rem 0 4rem;
