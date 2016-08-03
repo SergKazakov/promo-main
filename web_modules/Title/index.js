@@ -17,7 +17,7 @@ const Title = ({ theme="gray", title, subtitle }) => {
     "subtitleGray": theme === "gray",
     "subtitleWhite": theme === "white",
   })
-  
+
   return (
     <div className={ styles.wrapper }>
       <h2 className={ styles[titleClassName] }>

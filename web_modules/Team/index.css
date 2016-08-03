@@ -1,4 +1,129 @@
 .wrapper {
+  composes: wrapper from '../LayoutContainer/index.css';
   height: 74.4rem;
   background: url('./team.jpg') center / cover no-repeat;
+}
+
+.inner {
+  composes: inner from '../LayoutContainer/index.css';
+  display: flex;
+
+  @media (--mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (--noMobile) {
+    align-items: flex-start;
+  }
+
+  @media (--tablet) {
+    margin: 15rem 0 0;
+    justify-content: space-around;
+  }
+
+  @media (--desktop) {
+    justify-content: space-between;
+  }
+}
+
+.item {
+  position: relative;
+  transition: margin 300ms;
+  &:hover .img {
+    transform: scale(1.5);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.6);
+  }
+  &:hover .content {
+    transform: translate(-50%, 2rem);
+    opacity: 1;
+  }
+
+  @media (--mobile) {
+    & + & {
+      margin-top: 4rem;
+    }
+    &:hover + & {
+      margin-top: 10rem;
+    }
+  }
+
+  @media (--tablet) {
+    &:first-child {
+      margin: 1rem 0 0;
+    }
+    &:nth-child(3) {
+      margin: 2rem 0 0;
+    }
+    &:last-child {
+      margin: 4rem 0 0;
+    }
+  }
+
+  @media (--desktop) {
+    &:first-child {
+      margin: 7rem 0 0;
+    }
+    &:nth-child(2) {
+      margin: 1rem 0 0;
+    }
+    &:nth-child(3) {
+      margin: 4.5rem 0 0;
+    }
+    &:last-child {
+      margin: 1rem 0 0;
+    }
+  }
+}
+
+.img {
+  border-radius: 50%;
+  border: 3px solid #e74c3c;
+  transition: transform 300ms, box-shadow 300ms;
+  backface-visibility: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  text-align: center;
+  opacity: 0;
+  transform: translate(-50%, 0);
+  transition: transform 300ms, opacity 300ms;
+
+  @media (--mobile) {
+    top: 100%;
+  }
+
+  @media (--noMobile) {
+    top: calc(100% + 5rem);
+    &::before {
+      content: '';
+      width: 0.1rem;
+      height: 5rem;
+      background: #fff;
+      bottom: calc(100% + 2rem);
+      left: center;
+    }
+  }
+}
+
+.title,
+.subtitle {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.title {
+  font-size: 2.4rem;
+  color: #e74c3c;
+  margin: 0 0 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.4em;
+  color: #fff;
+  margin: 0;
 }
