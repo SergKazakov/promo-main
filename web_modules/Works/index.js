@@ -5,7 +5,7 @@ import nav from "./nav.json"
 import works from "./works.json"
 
 const Works = () => (
-  <section className={ styles.wrapper }>
+  <section id="portfolio" className={ styles.wrapper }>
     <Title
       title={ 'RECENT WORKS' }
       subtitle={

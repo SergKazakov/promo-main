@@ -2,7 +2,7 @@ import Title from "../Title"
 import styles from "./index.css"
 
 const Team = () => (
-  <section className={ styles.wrapper }>
+  <section id="team" className={ styles.wrapper }>
     <Title
       theme={ 'white' }
       title={ 'Our team' }

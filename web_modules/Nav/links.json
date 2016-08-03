@@ -5,26 +5,26 @@
   },
   {
     "title": "about us",
-    "url": "/"
+    "url": "about"
   },
   {
     "title": "portfolio",
-    "url": "/"
+    "url": "portfolio"
   },
   {
     "title": "pricing",
-    "url": "/"
+    "url": "pricing"
   },
   {
     "title": "team",
-    "url": "/"
+    "url": "team"
   },
   {
     "title": "blog",
-    "url": "/"
+    "url": "blog"
   },
   {
     "title": "contact",
-    "url": "/"
+    "url": "contact"
   }
 ]

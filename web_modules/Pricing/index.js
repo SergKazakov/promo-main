@@ -4,7 +4,7 @@ import styles from "./index.css"
 import pricings from "./pricings.json"
 
 const Pricing = () => (
-  <section className={ styles.wrapper }>
+  <section id="pricing" className={ styles.wrapper }>
     <div className={ styles.pricing }>
       <Title
         title={ "Our pricing" }
