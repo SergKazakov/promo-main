@@ -12,8 +12,7 @@
   }
 }
 
-.aside,
-.form {
+.aside {
   background: #fff;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
 
@@ -69,29 +68,4 @@
 
 .textLink {
   color: inherit;
-}
-
-.form {
-  @media (--noMobile) {
-    width: calc(665 / 1170 * 100%);
-  }
-
-  @media (--tablet) {
-    padding: 4rem 2rem;
-  }
-
-  @media (--desktop) {
-    padding: 10rem;
-  }
-}
-
-:global(.mui-textfield) {
-  margin: 0 0 3rem;
-}
-
-:global(.mui-textfield--float-label > label) {
-  font-size: 1.4rem;
-  color: #999;
-  font-weight: bold;
-  overflow: visible;
 }

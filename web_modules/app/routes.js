@@ -1,4 +1,3 @@
-import React, { Component } from "react"
 import { Route } from "react-router"
 
 import LayoutContainer from "../LayoutContainer"
@@ -8,7 +7,7 @@ import Page from "../layouts/Page"
 import PageError from "../layouts/PageError"
 import PageLoading from "../layouts/PageLoading"
 
-class PageContainer extends Component {
+class PageContainer extends React.Component {
   render() {
     const { props } = this
     return (

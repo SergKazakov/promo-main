@@ -1,6 +1,5 @@
 import Title from "../Title"
-import Button from "../Button"
-import { Input, Textarea } from "muicss/react"
+import ContactForm from "./Form"
 import styles from "./index.css"
 
 const Contact = () => (
@@ -40,13 +39,7 @@ const Contact = () => (
           </a>
         </p>
       </div>
-      <form className={ styles.form }>
-        <Input label="Name" floatingLabel required />
-        <Input type="email" label="Email" floatingLabel required />
-        <Input label="Subject" floatingLabel required />
-        <Textarea rows={ 0 } label="Message" floatingLabel required />
-        <Button>{ 'send message' }</Button>
-      </form>
+      <ContactForm />
     </div>
   </section>
 )
