@@ -1,5 +1,6 @@
 import Button from "../../Button"
 import { Input, Textarea } from "muicss/react"
+import { notify } from "react-notify-toast"
 import pkg from "../../../package.json"
 import "whatwg-fetch"
 import "./index.global.css"
@@ -18,6 +19,9 @@ class ContactForm extends React.Component {
     fetch(pkg.contactUrl, {
       method: "POST",
       body: new FormData(this.contactForm),
+    })
+    .catch(() => {
+      notify.show("We'll contact you as soon as possible.", "success")
     })
   }
 
