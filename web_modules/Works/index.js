@@ -1,7 +1,6 @@
 import Title from "../Title"
 import { Link } from "react-router"
 import styles from "./index.css"
-import nav from "./nav.json"
 import works from "./works.json"
 
 const Works = () => (
@@ -13,17 +12,6 @@ const Works = () => (
         but also the leap scrambled it to make a type.`
       }
     />
-    <ul className={ styles.nav }>
-      {
-        nav.map(({ title }, index) => (
-          <li key={ index } className={ styles.navItem }>
-            <a href="#" data-title={ title } className={ styles.navLink }>
-              { title }
-            </a>
-          </li>
-        ))
-      }
-    </ul>
     <ul className={ styles.list }>
       {
         works.map(({ title, category, url }, index) => {
