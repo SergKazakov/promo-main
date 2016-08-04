@@ -11,8 +11,4 @@
     display: flex;
     flex-wrap: wrap;
   }
-
-  @media (--desktop) {
-    margin: 0 -2.5rem;
-  }
 }

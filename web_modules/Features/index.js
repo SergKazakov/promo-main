@@ -3,7 +3,7 @@ import styles from "./index.css"
 import features from "./features.json"
 
 const Features = () => (
-  <section className={ styles.wrapper }>
+  <section id="features" className={ styles.wrapper }>
     <div className={ styles.features }>
       <div className={ styles.inner }>
         {
