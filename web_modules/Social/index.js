@@ -7,11 +7,16 @@ const Social = () => (
     {
       social.map(({ name, url }, index) => (
           <li key={ index } className={ styles.socialItem }>
-            <a href={ url } className={ styles.socialLink }>
+            <a
+              href={ url }
+              className={ styles.socialLink }
+              target={ "_blank" }
+            >
               <Svg
                 className={ styles.socialSvg }
                 svg={ require(`./${name}.svg`) }
                 width="2rem"
+                height="auto"
               />
             </a>
           </li>

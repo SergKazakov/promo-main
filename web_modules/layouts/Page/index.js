@@ -1,5 +1,4 @@
 import invariant from "invariant"
-import { joinUri } from "phenomic"
 import Hero from "../../Hero"
 import Features from "../../Features"
 import About from "../../About"
@@ -22,14 +21,9 @@ const {
   array,
 } = React.PropTypes
 
-const Page = (props, { metadata }) => {
-  const {
-    pkg,
-  } = metadata
-
+const Page = (props) => {
   const {
     __filename,
-    __url,
     head,
   } = props
 
@@ -41,18 +35,23 @@ const Page = (props, { metadata }) => {
   const metaTitle = head.metaTitle ? head.metaTitle : head.title
 
   const meta = [
-    { property: "og:type", content: "article" },
+    { name: "keywords", content: head.keywords },
+    { name: "description", content: head.description },
+    { property: "og:locale", content: "en_US" },
+    { property: "og:type", content: "website" },
     { property: "og:title", content: metaTitle },
-    {
-      property: "og:url",
-      content: joinUri(process.env.PHENOMIC_USER_URL, __url),
-    },
     { property: "og:description", content: head.description },
+    { property: "og:url", content: "https://embermvp.com" },
+    { property: "og:site_name", content: "EmberMVP" },
+    { property: "og:image", content: "https://embermvp.com/img/logo.png" },
+    { property: "og:image:width",  content: "310" },
+    { property: "og:image:height",  content: "310" },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: metaTitle },
-    { name: "twitter:creator", content: `@${ pkg.twitter }` },
     { name: "twitter:description", content: head.description },
-    { name: "description", content: head.description },
+    { name: "twitter:site", content: "@embermvp" },
+    { name: "twitter:domain", content: "EmberMVP" },
+    { name: "twitter:image:src", content: "https://embermvp.com/img/logo.png" },
   ]
 
   return (

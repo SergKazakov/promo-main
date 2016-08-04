@@ -1,34 +1,14 @@
 [
   {
     "name": "facebook",
-    "url": "/"
+    "url": "https://facebook.com/embermvp"
   },
   {
     "name": "twitter",
-    "url": "/"
+    "url": "https://twitter.com/embermvp"
   },
   {
-    "name": "google",
-    "url": "/"
-  },
-  {
-    "name": "rss",
-    "url": "/"
-  },
-  {
-    "name": "linkedin",
-    "url": "/"
-  },
-  {
-    "name": "skype",
-    "url": "/"
-  },
-  {
-    "name": "vimeo",
-    "url": "/"
-  },
-  {
-    "name": "tumblr",
-    "url": "/"
+    "name": "vk",
+    "url": "https://vk.com/embermvp"
   }
 ]

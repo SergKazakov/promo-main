@@ -7,21 +7,16 @@ import Page from "../layouts/Page"
 import PageError from "../layouts/PageError"
 import PageLoading from "../layouts/PageLoading"
 
-class PageContainer extends React.Component {
-  render() {
-    const { props } = this
-    return (
-      <PhenomicPageContainer
-        { ...props }
-        layouts={ {
-          Page,
-          PageError,
-          PageLoading,
-        } }
-      />
-    )
-  }
-}
+const PageContainer = (props) => (
+  <PhenomicPageContainer
+    { ...props }
+    layouts={ {
+      Page,
+      PageError,
+      PageLoading,
+    } }
+  />
+)
 
 export default (
   <Route component={ LayoutContainer }>

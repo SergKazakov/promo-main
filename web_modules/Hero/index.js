@@ -27,7 +27,7 @@ const Hero = () => (
           { "We'll help you to develop ambitious Ember.js applications" }
         </h3>
         <h2 className={ styles.title }>
-          { 'EMBER.JS CONSULTING SERVICES & TRAINING' }
+          { 'EMBER.JS CONSULTING SERVICES & OUTSOURCING' }
         </h2>
         <Divider theme={ 'white' } />
         <p className={ styles.text }>
