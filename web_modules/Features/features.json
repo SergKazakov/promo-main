@@ -1,22 +1,22 @@
 [
   {
     "icon": "glasses",
-    "title": "SLEEK DESIGN",
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry."
+    "title": "Ember.js Training",
+    "text": "We offer corporate training. We’ll teach you everything we know about building Ember.js applications, from the basics down to deployment, testing, working with backends, and even optimization."
   },
   {
     "icon": "heart",
-    "title": "CLEAN CODE",
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry."
+    "title": "Code Audits",
+    "text": "Have an existing a project or don't know where to start? Our experts will prepare a detailed project report or develop an architecture of a new application using best practices."
   },
   {
     "icon": "lamp",
-    "title": "CREATIVE IDEAS",
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry."
+    "title": "Hire developers",
+    "text": "You can outsource our Ember.js developer for your web projects at very affordable price."
   },
   {
     "icon": "chat",
-    "title": "FREE SUPPORT",
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum has been the industry."
+    "title": "Startup MVP",
+    "text": "Do you run a startup and you need Minimal Viable Product for the demo? We can do it for a short time! Development and maintenance of your application."
   }
 ]
