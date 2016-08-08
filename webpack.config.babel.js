@@ -24,11 +24,11 @@ export const makeConfig = (config = {}) => {
         },
         {
           test: /\.json$/,
-          loader: "json-loader",
+          loader: "json",
         },
         {
           test: /\.js$/,
-          loader: `babel-loader${
+          loader: `babel${
             config.dev
             ? "?cacheDirectory=true&presets[]=babel-preset-react-hmre"
             : "?cacheDirectory=true"
@@ -43,13 +43,13 @@ export const makeConfig = (config = {}) => {
           exclude: /\.global\.css$/,
           include: path.resolve(__dirname, "web_modules"),
           loader: ExtractTextPlugin.extract(
-            "style-loader",
-            [ `css-loader?modules&localIdentName=${
+            "style",
+            [ `css?modules&localIdentName=${
                 config.production
                 ? "[hash:base64:5]"
                 : "[path][name]--[local]--[hash:base64:5]"
               }`,
-              "postcss-loader",
+              "postcss",
             ].join("!"),
           ),
         },
@@ -57,8 +57,8 @@ export const makeConfig = (config = {}) => {
           test: /\.global\.css$/,
           include: path.resolve(__dirname, "web_modules"),
           loader: ExtractTextPlugin.extract(
-            "style-loader",
-            [ "css-loader", "postcss-loader" ].join("!"),
+            "style",
+            [ "css", "postcss" ].join("!"),
           ),
         },
         {
@@ -67,7 +67,7 @@ export const makeConfig = (config = {}) => {
         },
         {
           test: /\.svg$/,
-          loader: "raw-loader",
+          loader: "raw",
         },
       ],
     },
