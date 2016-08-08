@@ -125,3 +125,7 @@
   font-size: 1.4rem;
   margin: 0;
 }
+
+.text {
+  composes: text from '../Blog/Post/index.css';
+}

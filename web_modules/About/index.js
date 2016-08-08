@@ -1,4 +1,4 @@
-import Button from "../Button"
+import { Link as ScrollLink } from "react-scroll"
 import styles from "./index.css"
 
 const About = () => (
@@ -28,7 +28,14 @@ const About = () => (
             like Aldus PageMaker including versions of Lorem Ipsum.`
           }
         </p>
-        <Button to="/">{ 'Browse our work' }</Button>
+        <ScrollLink
+          className={ styles.btn }
+          to={ 'portfolio' }
+          smooth
+          duration={ 2000 }
+        >
+          { 'Browse our work' }
+        </ScrollLink>
       </div>
     </div>
   </section>

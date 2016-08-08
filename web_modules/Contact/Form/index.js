@@ -2,7 +2,6 @@ import Button from "../../Button"
 import { Input, Textarea } from "muicss/react"
 import { notify } from "react-notify-toast"
 import pkg from "../../../package.json"
-import "whatwg-fetch"
 import "./index.global.css"
 import styles from "./index.css"
 

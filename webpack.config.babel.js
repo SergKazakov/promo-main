@@ -127,11 +127,16 @@ export const makeConfig = (config = {}) => {
     },
 
     plugins: [
+      new webpack.optimize.OccurrenceOrderPlugin(),
       new ExtractTextPlugin("[name].[hash].css", { disable: config.dev }),
       new webpack.ProvidePlugin({
         React:    "react",
         ReactDOM: "react-dom",
         Helmet:   "react-helmet",
+      }),
+      new webpack.DefinePlugin({
+        "process.env.NODE_ENV":
+          config.dev ? "\"development\"" : "\"production\"",
       }),
       ...config.production && [
         new webpack.optimize.DedupePlugin(),

@@ -14,7 +14,7 @@ const Works = () => (
     />
     <ul className={ styles.list }>
       {
-        works.map(({ title, category, url }, index) => {
+        works.map(({ text, title, category, url }, index) => {
           const src = require(`./${++index}.jpg`)
 
           const props = {
@@ -27,6 +27,7 @@ const Works = () => (
           return (
             <li key={ index } { ...props }>
               <Link to={ url } className={ styles.overlay }>
+                <p className={ styles.text }>{ text }</p>
                 <h3 className={ styles.title }>{ title }</h3>
                 <span className={ styles.category }>{ category }</span>
               </Link>
