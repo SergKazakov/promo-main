@@ -1,6 +1,6 @@
-import Button from "../Button"
 import Divider from "../Divider"
 import { Link } from "react-scroll"
+import { Link as ScrollLink } from "react-scroll"
 import Svg from "react-svg-inline"
 import styles from "./index.css"
 
@@ -35,9 +35,14 @@ const Hero = () => (
             "Ember.js Training & Code Audits & Hire developers & Startup MVP"
           }
         </p>
-        <Button to={ '/' } className={ styles.btn }>
+        <ScrollLink
+          className={ styles.btn }
+          to={ 'contact' }
+          smooth
+          duration={ 2000 }
+        >
           { 'Get started now' }
-        </Button>
+        </ScrollLink>
       </div>
     </div>
     <Link
