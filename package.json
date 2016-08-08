@@ -31,7 +31,7 @@
     "env": {
       "production": {
         "presets": [
-          "react-optimize"
+          "babel-preset-react-optimize"
         ]
       }
     }

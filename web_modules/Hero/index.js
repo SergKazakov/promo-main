@@ -23,13 +23,13 @@ const Hero = () => (
         />
       </video>
       <div className={ styles.content }>
-        <h3 className={ styles.subtitle }>
-          { "We'll help you to develop ambitious Ember.js applications" }
-        </h3>
         <h2 className={ styles.title }>
           { 'EMBER.JS CONSULTING SERVICES & OUTSOURCING' }
         </h2>
         <Divider theme={ 'white' } />
+        <h3 className={ styles.subtitle }>
+          { "We'll help you to develop ambitious Ember.js applications" }
+        </h3>
         <p className={ styles.text }>
           {
             "Ember.js Training & Code Audits & Hire developers & Startup MVP"
