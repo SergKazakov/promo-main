@@ -1,6 +1,5 @@
 import Title from "../Title"
 import { Link } from "react-router"
-import Svg from "react-svg-inline"
 import styles from "./index.css"
 import clients from "./clients.json"
 
@@ -18,10 +17,9 @@ const Clients = () => (
         clients.map(({ name, url }, index) => (
           <li className={ styles.listItem } key={ index }>
             <Link className={ styles.listLink } to={ url }>
-              <Svg
-                svg={ require(`./${name}.svg`) }
-                width="15rem"
-                height="auto"
+              <img
+                className={ styles.listImg } 
+                src={ require(`!!file!./${name}.svg`) }
               />
             </Link>
           </li>
