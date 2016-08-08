@@ -27,25 +27,28 @@ const Page = ({ __filename, head }, { metadata }) => {
     `Your page '${ __filename }' needs a title`
   )
 
-  const { pkg }   = metadata
   const metaTitle = head.metaTitle ? head.metaTitle : head.title
-  const logo      = `${pkg.homepage}${require("!!file!../../Logo/logo.png")}`
+  const { pkg } = metadata
+  const { homepage } = pkg
+  const { keywords, description } = head
+  const logoSrc = require("file?name=[name].[ext]!../../Logo/logo.png")
+  const logo = `${homepage}${logoSrc}`
 
   const meta = [
-    { name: "keywords", content: head.keywords },
-    { name: "description", content: head.description },
+    { name: "keywords", content: keywords },
+    { name: "description", content: description },
     { property: "og:locale", content: "en_US" },
     { property: "og:type", content: "website" },
     { property: "og:title", content: metaTitle },
-    { property: "og:description", content: head.description },
-    { property: "og:url", content: pkg.homepage },
+    { property: "og:description", content: description },
+    { property: "og:url", content: homepage },
     { property: "og:site_name", content: "EmberMVP" },
     { property: "og:image", content: logo },
     { property: "og:image:width",  content: "229" },
     { property: "og:image:height",  content: "52" },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: metaTitle },
-    { name: "twitter:description", content: head.description },
+    { name: "twitter:description", content: description },
     { name: "twitter:site", content: "@embermvp" },
     { name: "twitter:domain", content: "EmberMVP" },
     { name: "twitter:image:src", content: logo },
