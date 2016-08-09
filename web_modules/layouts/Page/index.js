@@ -28,8 +28,7 @@ const Page = ({ __filename, head }, { metadata }) => {
   )
 
   const metaTitle = head.metaTitle ? head.metaTitle : head.title
-  const { pkg } = metadata
-  const { homepage } = pkg
+  const { pkg: { homepage } } = metadata
   const { keywords, description } = head
   const logoSrc = require("!!file?name=[name].[ext]!../../Logo/logo.png")
   const logo = `${homepage}${logoSrc}`
