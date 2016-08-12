@@ -2,6 +2,7 @@
   composes: wrapper from '../LayoutContainer/index.css';
   height: 74.4rem;
   background: url('./team.jpg') center / cover no-repeat;
+  overflow: hidden;
 }
 
 .inner {

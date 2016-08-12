@@ -8,7 +8,6 @@ import Study from "../../Study"
 import Contact from "../../Contact"
 import Stats from "../../Stats"
 import Pricing from "../../Pricing"
-import Team from "../../Team"
 import Clients from "../../Clients"
 import Blog from "../../Blog"
 import Promo from "../../Promo"
@@ -67,7 +66,6 @@ const Page = ({ __filename, head }, { metadata }) => {
       <Study />
       <Stats />
       <Pricing />
-      <Team />
       <Clients />
       <Blog />
       <Contact />
