@@ -1,5 +1,5 @@
-import Button from "../../Button"
-import styles from "./index.css"
+import { Link as ScrollLink } from "react-scroll"
+import css from "./index.css"
 
 const {
   string,
@@ -7,33 +7,33 @@ const {
   oneOf,
 } = React.PropTypes
 
-const Item = ({ title, price, list, url, type="primary" }) => {
-  const isPrimary = type === "primary"
-
+const Item = ({ title, price, list, to, type="primary" }) => {
   const buttonProps = {
-    to: url,
-    ...isPrimary && { type: "gray" },
+    to,
+    className: css[`${type}Btn`],
+    smooth: true,
+    duration: 2000,
   }
 
   return (
-    <div className={ styles[`${type}Wrapper`] }>
-      <div className={ styles.inner }>
-        <header className={ styles.header }>
-          <h3 className={ styles.title }>{ title }</h3>
-          <span className={ styles.price }>
+    <div className={ css[`${type}Wrapper`] }>
+      <div className={ css.inner }>
+        <header className={ css.header }>
+          <h3 className={ css.title }>{ title }</h3>
+          <span className={ css.price }>
             { `$${price}` }
-            <span className={ styles.priceText }>{ 'per month' }</span>
+            <span className={ css.priceText }>{ 'per hour' }</span>
           </span>
         </header>
-        <ul className={ styles.list }>
+        <ul className={ css.list }>
           {
             list.map((item, index) => (
-              <li key={ index } className={ styles.listItem }>{ item }</li>
+              <li key={ index } className={ css.listItem }>{ item }</li>
             ))
           }
         </ul>
-        <footer className={ styles.footer }>
-          <Button { ...buttonProps }>{ 'Choose plan' }</Button>
+        <footer className={ css.footer }>
+          <ScrollLink { ...buttonProps }>{ 'Choose plan' }</ScrollLink>
         </footer>
       </div>
     </div>
@@ -41,7 +41,7 @@ const Item = ({ title, price, list, url, type="primary" }) => {
 }
 
 Item.propTypes = {
-  url: string.isRequired,
+  to: string.isRequired,
   title: string.isRequired,
   price: string.isRequired,
   list: array.isRequired,

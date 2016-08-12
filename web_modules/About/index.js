@@ -9,23 +9,20 @@ const About = () => (
         <h3 className={ styles.title }>{ 'OUR HISTORY' }</h3>
         <p className={ styles.text }>
           {
-            `Lorem Ipsum is simply dummy text
-             of the printing and typesetting industry.
-             Lorem Ip sum has been the industry's
-             standard dummy text ever since the 1500s,
-             when an unknown printer took a galley of type and scrambled
-             it to make a type specimen book.`
+            `We have been starting as a young freelance team since 2013 year.
+            Our first project was an American startup, which was based on
+            interactive videos. This project has grown as our team.
+            The next project was sold to the banking system. In parallel,
+            we are engaged in another project built on Cashback system.`
           }
         </p>
         <p className={ styles.text }>
           {
-            `It has survived not only five centuries,
-            but also the leap into electronic typesetting,
-            remaining essentially unchanged.
-            It was popularised in the 1960s with the release
-            of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software
-            like Aldus PageMaker including versions of Lorem Ipsum.`
+            `Now we are developing a platform for a new generation of 
+            financial systems covering the whole banking system in the world.
+            We are also working on own internal projects, which can be seen in
+            the portfolio. We actively participate in the development of open
+            source projects and communicate with Ember community.`
           }
         </p>
         <ScrollLink

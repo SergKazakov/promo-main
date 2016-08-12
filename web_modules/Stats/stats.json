@@ -1,27 +1,27 @@
 [
   {
     "icon": "heart",
-    "amount": "3891",
-    "text": "User Favourites"
+    "amount": "10M+",
+    "text": "Lines of Code"
   },
   {
     "icon": "label",
-    "amount": "281K",
-    "text": "Posts Last 24 Hours"
+    "amount": "100+",
+    "text": "Happy Clients"
   },
   {
     "icon": "thumb",
-    "amount": "618",
-    "text": "Total Posts"
+    "amount": "8Y+",
+    "text": "Development Experience"
   },
   {
     "icon": "star",
-    "amount": "178",
-    "text": "Campaigns"
+    "amount": "23",
+    "text": "Number of Developers"
   },
   {
     "icon": "bookmark",
-    "amount": "285",
-    "text": "Amazing Features"
+    "amount": "∞",
+    "text": "In Love With Ember.js"
   }
 ]

@@ -1,36 +1,41 @@
 [
   {
     "title": "starter",
-    "price": "19",
+    "price": "20",
     "list": [
-      "Competition Analysis Methods",
-      "All Ranked URLs",
-      "International Support System",
-      "Social Media Tracking"
+      "develop arhitecrture",
+      "develop components",
+      "updating your app",
+      "wrap to mobile app"
     ],
-    "url": "/"
+    "to": "contact"
   },
   {
     "title": "premium",
-    "price": "39",
+    "price": "30",
     "list": [
-      "Competition Analysis Methods",
-      "All Ranked URLs",
-      "International Support System",
-      "Social Media Tracking"
+      "visualizations of d3",
+      "module app",
+      "search engine",
+      "server rendering",
+      "build app in realtime",
+      "plugins system",
+      "secure you code",
+      "memory leak detect"
     ],
-    "url": "/",
+    "to": "contact",
     "type": "premium"
   },
   {
-    "title": "business",
-    "price": "99",
+    "title": "enterprise",
+    "price": "70",
     "list": [
-      "Competition Analysis Methods",
-      "All Ranked URLs",
-      "International Support System",
-      "Social Media Tracking"
+      "private company components",
+      "training",
+      "code audit",
+      "corporative contracts",
+      "full app lifecycle"
     ],
-    "url": "/"
+    "to": "contact"
   }
 ]

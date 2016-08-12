@@ -1,5 +1,4 @@
 import Title from "../Title"
-import { Link } from "react-router"
 import styles from "./index.css"
 import clients from "./clients.json"
 
@@ -14,14 +13,12 @@ const Clients = () => (
     />
     <ul className={ styles.list }>
       {
-        clients.map(({ name, url }, index) => (
+        clients.map((item, index) => (
           <li className={ styles.listItem } key={ index }>
-            <Link className={ styles.listLink } to={ url }>
-              <img
-                className={ styles.listImg } 
-                src={ require(`!!file!./${name}.svg`) }
-              />
-            </Link>
+            <img
+              className={ styles.listImg }
+              src={ require(`!!file!./${item}.svg`) }
+            />
           </li>
         ))
       }

@@ -91,14 +91,24 @@
 .list {
   text-align: center;
   margin: 5rem 0;
+  padding: 0 1.5rem;
 }
 
 .listItem {
   font-size: 1.4rem;
   color: #999;
   line-height: 3;
+  text-transform: capitalize;
 }
 
 .footer {
   margin: auto 0 0;
+}
+
+.primaryBtn {
+  composes: gray from '../../Button/index.css';
+}
+
+.premiumBtn {
+  composes: primary from '../../Button/index.css';
 }
