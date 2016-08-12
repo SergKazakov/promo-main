@@ -12,25 +12,24 @@ const Item = ({ to, text, title, category, img, smooth=false }) => (
     style={ { backgroundImage: `url(${img})` } }
   >
     {
-      !smooth &&
-      <a href={ to } className={ css.overlay }>
-        <p className={ css.text }>{ text }</p>
-        <h3 className={ css.title }>{ title }</h3>
-        <span className={ css.category }>{ category }</span>
-      </a>
-    }
-    {
-      smooth &&
-      <ScrollLink 
-        to={ to }
-        smooth
-        duration={ 2000 }
-        className={ css.overlay }
-      >
-        <p className={ css.text }>{ text }</p>
-        <h3 className={ css.title }>{ title }</h3>
-        <span className={ css.category }>{ category }</span>
-      </ScrollLink>
+      smooth
+      ?
+        <ScrollLink
+          to={ to }
+          smooth
+          duration={ 2000 }
+          className={ css.overlay }
+        >
+          <p className={ css.text }>{ text }</p>
+          <h3 className={ css.title }>{ title }</h3>
+          <span className={ css.category }>{ category }</span>
+        </ScrollLink>
+      :
+        <a href={ to } className={ css.overlay }>
+          <p className={ css.text }>{ text }</p>
+          <h3 className={ css.title }>{ title }</h3>
+          <span className={ css.category }>{ category }</span>
+        </a>
     }
   </div>
 )
