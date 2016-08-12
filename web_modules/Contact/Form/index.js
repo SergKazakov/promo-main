@@ -21,7 +21,8 @@ class ContactForm extends React.Component {
       method: "POST",
       body: new FormData(this.contactForm),
     })
-    .catch(() => {
+    .catch(error => console.log(error))
+    .finally(() => {
       this.toast.success(
         "We'll contact you as soon as possible.",
         "Success",

@@ -1,4 +1,5 @@
 import "whatwg-fetch"
+import "promise.prototype.finally"
 
 import metadata from "../web_modules/app/metadata"
 import routes from "../web_modules/app/routes"
