@@ -1,41 +1,38 @@
 import Title from "../Title"
 import ContactForm from "./Form"
-import styles from "./index.css"
+import css from "./index.css"
+
+const tel = "+ 02168091421"
+const email = "contact@embermvp.com"
 
 const Contact = () => (
-  <section id="contact" className={ styles.wrapper }>
+  <section id="contact" className={ css.wrapper }>
     <Title
       title={ 'kEEP IN TOUCH' }
-      subtitle={ `Nullam sit amet odio eu est aliquet euismod a a urna.
-                  Proin eu urna suscipit, dictum quam nec.` }
+      subtitle={ "Let’s start your success project together" }
     />
-    <div className={ styles.contact }>
-      <div className={ styles.aside }>
-        <h3 className={ styles.title }>
+    <div className={ css.contact }>
+      <div className={ css.aside }>
+        <h3 className={ css.title }>
           { 'OUR ADDRESS' }
         </h3>
-        <p className={ styles.text }>
-          { 'House #13, Streat road, Sydney 2310 Australia' }
+        <p className={ css.text }>
+          { 'Russia, Taganrog 347900' }
         </p>
-        <h3 className={ styles.title }>
+        <h3 className={ css.title }>
           { 'CALL US' }
         </h3>
-        <p className={ styles.text }>
-          <a className={ styles.textLink } href={ 'tel:+ 880 168 109 1425' }>
-            { '+ 880 168 109 1425' }
+        <p className={ css.text }>
+          <a className={ css.textLink } href={ `tel:${tel}` }>
+            { tel }
           </a>
         </p>
-        <p className={ styles.text }>
-          <a className={ styles.textLink } href={ 'tel:+ 0216809142' }>
-            { '+ 0216809142' }
-          </a>
-        </p>
-        <h3 className={ styles.title }>
+        <h3 className={ css.title }>
           { 'EMAIL US' }
         </h3>
-        <p className={ styles.text }>
-          <a className={ styles.textLink } href={ 'mailto:contact@email.com' }>
-            { 'contact@email.com' }
+        <p className={ css.text }>
+          <a className={ css.textLink } href={ `mailto:${email}` }>
+            { email }
           </a>
         </p>
       </div>
