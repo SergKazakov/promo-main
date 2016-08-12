@@ -30,10 +30,12 @@
 .item {
   position: relative;
   transition: margin 300ms;
+
   &:hover .img {
     transform: scale(1.5);
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.6);
   }
+
   &:hover .content {
     transform: translate(-50%, 2rem);
     opacity: 1;
@@ -43,6 +45,7 @@
     & + & {
       margin-top: 4rem;
     }
+
     &:hover + & {
       margin-top: 10rem;
     }
@@ -52,9 +55,11 @@
     &:first-child {
       margin: 1rem 0 0;
     }
+
     &:nth-child(3) {
       margin: 2rem 0 0;
     }
+
     &:last-child {
       margin: 4rem 0 0;
     }
@@ -64,12 +69,15 @@
     &:first-child {
       margin: 7rem 0 0;
     }
+
     &:nth-child(2) {
       margin: 1rem 0 0;
     }
+
     &:nth-child(3) {
       margin: 4.5rem 0 0;
     }
+
     &:last-child {
       margin: 1rem 0 0;
     }
@@ -99,6 +107,7 @@
 
   @media (--noMobile) {
     top: calc(100% + 5rem);
+
     &::before {
       content: '';
       width: 0.1rem;

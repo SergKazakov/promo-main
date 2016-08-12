@@ -40,7 +40,7 @@ const Services = () => {
           </Slider>
         </div>
       </div>
-      <div className={ styles.img }></div>
+      <div className={ styles.img } />
     </section>
   )
 }

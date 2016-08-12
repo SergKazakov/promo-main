@@ -38,6 +38,7 @@
   & :global(.slick-track) {
     display: flex;
   }
+
   & :global(.slick-slide) {
     display: flex;
     flex-direction: column;
@@ -45,6 +46,7 @@
     padding: 8rem 0 11rem;
     height: auto;
   }
+
   & :global(.slick-dots) {
     position: absolute;
     left: 0;
@@ -53,9 +55,11 @@
     display: flex !important;
     justify-content: center;
   }
+
   & :global(.slick-dots li) {
     margin: 0 0.4rem;
   }
+
   & :global(.slick-dots button) {
     width: 1.2rem;
     height: 1.2rem;
@@ -64,6 +68,7 @@
     font-size: 0;
     display: block;
   }
+
   & :global(.slick-dots .slick-active button) {
     background: #e74c3c;
   }
@@ -85,6 +90,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 0 5rem;
+
   & svg {
     transform: rotate(-45deg);
   }

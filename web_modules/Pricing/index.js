@@ -17,7 +17,7 @@ const Pricing = () => (
       <div className={ styles.list }>
         {
           pricings.map((props, index) => (
-            <Item {...props } key={ index }  />
+            <Item { ...props } key={ index }  />
           ))
         }
       </div>

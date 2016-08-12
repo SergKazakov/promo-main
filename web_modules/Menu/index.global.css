@@ -4,6 +4,7 @@
   position: fixed;
   left: 2.5rem;
   top: 5.1rem;
+
   &::after {
     content: '';
     position: absolute;
@@ -38,6 +39,7 @@
 
 .bm-list {
   padding: 4rem 2.5rem;
+
   &__link {
     color: #fff;
     font-size: 1.8rem;

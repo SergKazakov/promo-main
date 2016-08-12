@@ -26,13 +26,16 @@
   transition: border-color 300ms;
   position: relative;
   cursor: pointer;
+
   &:hover {
     color: transparent;
     border-color: #e74c3c;
   }
+
   &:hover::before {
     visibility: visible;
   }
+
   &::before {
     content: attr(data-title);
     visibility: hidden;

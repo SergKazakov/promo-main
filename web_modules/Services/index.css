@@ -68,12 +68,14 @@
       padding: 0 1.5rem;
     }
   }
+
   & :global(.slick-list) {
     @media (--desktop) {
       margin: 0 -3.7rem 0 0;
       padding: 0 3.7rem 0 0;
     }
   }
+
   & :global(.slick-dots) {
     @media (--mobile) {
       left: center;
@@ -86,6 +88,7 @@
       left: 0;
     }
   }
+
   & :global(.slick-dots li:not(:first-child)) {
     @media (--mobile) {
       margin-left: 1.1rem;
@@ -95,6 +98,7 @@
       margin: 1.1rem 0 0;
     }
   }
+
   & :global(.slick-dots button) {
     font-size: 0;
     background: #3e3e3e;
@@ -109,6 +113,7 @@
       height: 3.4rem;
     }
   }
+
   & :global(.slick-dots .slick-active button) {
     background: #e74c3c;
 

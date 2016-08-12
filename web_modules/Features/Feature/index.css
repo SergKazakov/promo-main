@@ -19,9 +19,11 @@
       border-color: #e74c3c;
       color: #e74c3c;
     }
+
     & .icon svg {
       transform: rotate(-45deg);
     }
+
     & .title {
       color: #e74c3c;
     }
@@ -38,6 +40,7 @@
   align-items: center;
   justify-content: center;
   transition: border-color 300ms, transform 300ms;
+
   & svg {
     transition: all 300ms;
     backface-visibility: hidden;
@@ -54,6 +57,7 @@
   margin: 2.5rem 0 1.5rem;
   padding: 0 0 2rem;
   text-align: center;
+
   &::after {
     content: '';
     width: 4rem;

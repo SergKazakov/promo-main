@@ -9,8 +9,7 @@ const Post = ({ src, category, title, text, url }) => (
     <div
       className={ styles.img }
       style={ { backgroundImage: `url(${src})` } }
-    >
-    </div>
+    />
     <div className={ styles.content }>
       <span className={ styles.category }>{ category }</span>
       <h4 className={ styles.title }>{ title }</h4>

@@ -36,9 +36,11 @@
     order: 3;
     margin: 1.6rem 0 0;
   }
+
   & .header {
     background: #e74c3c;
   }
+
   & .price {
     color: #e74c3c;
   }

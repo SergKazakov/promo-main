@@ -20,9 +20,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   &:hover {
     color: #e74c3c;
   }
+
   & svg {
     transition: all 300ms;
   }

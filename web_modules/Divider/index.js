@@ -11,7 +11,7 @@ const Divider = ({ theme="gray" }) => {
 
   return (
     <div className={ styles.divider }>
-      <span className={ styles[className] }></span>
+      <span className={ styles[className] } />
     </div>
   )
 }

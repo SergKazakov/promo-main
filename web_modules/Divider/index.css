@@ -11,6 +11,7 @@
   display: inline-block;
   vertical-align: middle;
   position: relative;
+
   &::before,
   &::after {
     content: '';
@@ -18,9 +19,11 @@
     height: 1px;
     width: 8rem;
   }
+
   &::before {
     right: calc(100% + 1.4rem);
   }
+
   &::after {
     left: calc(100% + 1.4rem);
   }
@@ -28,6 +31,7 @@
 
 .dividerInnerGray {
   composes: dividerInner;
+
   &::before,
   &::after {
     background: #999;
@@ -36,6 +40,7 @@
 
 .dividerInnerWhite {
   composes: dividerInner;
+
   &::before,
   &::after {
     background: #fff;
