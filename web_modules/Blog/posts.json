@@ -1,26 +1,26 @@
 [
   {
-    "category": "art / t-shirt",
-    "title": "t-shirt design",
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.",
+    "category": "code",
+    "title": "Dynamic router extension",
+    "text": "",
     "url": "/"
   },
   {
-    "category": "art / t-shirt",
-    "title": "t-shirt design",
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.",
+    "category": "code",
+    "title": "Ember engine step by step",
+    "text": "",
     "url": "/"
   },
   {
-    "category": "art / t-shirt",
-    "title": "t-shirt design",
-    "text": "Lorem an unknown printer took a galley of type a scrambled it to make a type specimen book.",
+    "category": "code",
+    "title": "Ember concurrency changes life",
+    "text": "",
     "url": "/"
   },
   {
-    "category": "art / t-shirt",
-    "title": "t-shirt design",
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it to make a type specimen book.",
+    "category": "code",
+    "title": "Application architecture based on ember.js plugins",
+    "text": "",
     "url": "/"
   }
 ]
