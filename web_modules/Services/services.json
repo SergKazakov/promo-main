@@ -1,52 +1,43 @@
 [
   [
     {
-      "title": "WEB DESIGN",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+      "title": "architecture development",
       "icon": "tv"
     },
     {
-      "title": "PRINT DESIGN",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+      "title": "updating your app to latest versions",
       "icon": "paper"
     },
     {
-      "title": "PHOTOGRAPHY",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+      "title": "outsourcing",
       "icon": "photo"
     }
   ],
   [
     {
-      "title": "WEB DESIGN",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+      "title": "training",
       "icon": "paper"
     },
     {
-      "title": "PRINT DESIGN",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+      "title": "code audit",
       "icon": "tv"
     },
     {
-      "title": "PHOTOGRAPHY",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+      "title": "application lifecycle management",
       "icon": "photo"
     }
   ],
   [
     {
-      "title": "WEB DESIGN",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+      "title": "search engine optimization",
       "icon": "tv"
     },
     {
-      "title": "PRINT DESIGN",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+      "title": "wrap to mobile app",
       "icon": "paper"
     },
     {
-      "title": "PHOTOGRAPHY",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ip sum has been the industry's standard dummy text ever.",
+      "title": "server rendering",
       "icon": "photo"
     }
   ]

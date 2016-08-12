@@ -1,16 +1,15 @@
 import Svg from "react-svg-inline"
-import styles from "./index.css"
+import css from "./index.css"
 
 const {
   string,
 } = React.PropTypes
 
-const Item = ({ title, text, icon }) => (
-  <div className={ styles.wrapper }>
-    <h3 className={ styles.title }>{ title }</h3>
-    <p className={ styles.text }>{ text }</p>
+const Item = ({ title, icon }) => (
+  <div className={ css.wrapper }>
+    <h3 className={ css.title }>{ title }</h3>
     <Svg
-      className={ styles.icon }
+      className={ css.icon }
       svg={ icon }
       width="2.6rem"
     />
