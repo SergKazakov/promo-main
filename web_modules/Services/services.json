@@ -2,43 +2,43 @@
   [
     {
       "title": "architecture development",
-      "icon": "tv"
+      "icon": "development"
     },
     {
       "title": "updating your app to latest versions",
-      "icon": "paper"
+      "icon": "update"
     },
     {
       "title": "outsourcing",
-      "icon": "photo"
+      "icon": "outsource"
     }
   ],
   [
     {
       "title": "training",
-      "icon": "paper"
+      "icon": "training"
     },
     {
       "title": "code audit",
-      "icon": "tv"
+      "icon": "review"
     },
     {
       "title": "application lifecycle management",
-      "icon": "photo"
+      "icon": "management"
     }
   ],
   [
     {
       "title": "search engine optimization",
-      "icon": "tv"
+      "icon": "seo"
     },
     {
       "title": "wrap to mobile app",
-      "icon": "paper"
+      "icon": "smartphone"
     },
     {
       "title": "server rendering",
-      "icon": "photo"
+      "icon": "server"
     }
   ]
 ]
