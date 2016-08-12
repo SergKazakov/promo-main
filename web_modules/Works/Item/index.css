@@ -37,17 +37,10 @@
   opacity: 0;
   transition: opacity 500ms;
   cursor: pointer;
+  padding: 2rem;
 
   &:hover {
     color: #fff;
-  }
-
-  @media (--noDesktop) {
-    padding: 1.5rem;
-  }
-
-  @media (--desktop) {
-    padding: 5rem;
   }
 }
 
