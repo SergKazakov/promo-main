@@ -18,7 +18,6 @@ const Item = ({ title, icon }) => (
 
 Item.propTypes = {
   title: string.isRequired,
-  text: string.isRequired,
   icon: string.isRequired,
 }
 

@@ -34,7 +34,7 @@ const Title = ({ theme="gray", title, subtitle }) => {
 Title.propTypes = {
   theme: oneOf([ "white", "gray" ]),
   title: string.isRequired,
-  subtitle: string.isRequired,
+  subtitle: string,
 }
 
 export default Title

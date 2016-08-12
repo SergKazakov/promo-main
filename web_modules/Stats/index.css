@@ -1,5 +1,13 @@
-.wrapper {
+.wrapper,
+.statsWrapper {
   composes: wrapper from '../LayoutContainer/index.css';
+}
+
+.wrapper {
+  padding-bottom: 0;
+}
+
+.statsWrapper {
   background: url(./stats.jpg) center / cover no-repeat;
   position: relative;
 
@@ -15,7 +23,6 @@
 
   @media (--desktop) {
     height: 51.1rem;
-    padding-bottom: 0;
   }
 }
 

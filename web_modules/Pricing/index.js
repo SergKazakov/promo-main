@@ -1,20 +1,18 @@
 import Title from "../Title"
 import Item from "./Item"
-import styles from "./index.css"
+import css from "./index.css"
 import pricings from "./pricings.json"
 
 const Pricing = () => (
-  <section id="pricing" className={ styles.wrapper }>
-    <div className={ styles.pricing }>
+  <section id="pricing" className={ css.wrapper }>
+    <div className={ css.pricing }>
       <Title
         title={ "Our pricing" }
         subtitle={
-          `A 30 days free trial for all.
-          A brief story about how this process works,
-          keep an eye till the end.`
+          "You will be surprised pleasantly by our prices!"
         }
       />
-      <div className={ styles.list }>
+      <div className={ css.list }>
         {
           pricings.map((props, index) => (
             <Item { ...props } key={ index }  />
