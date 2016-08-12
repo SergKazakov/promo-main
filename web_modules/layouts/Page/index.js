@@ -4,7 +4,6 @@ import Features from "../../Features"
 import About from "../../About"
 import Services from "../../Services"
 import Works from "../../Works"
-import Study from "../../Study"
 import Contact from "../../Contact"
 import Stats from "../../Stats"
 import Pricing from "../../Pricing"
@@ -63,7 +62,6 @@ const Page = ({ __filename, head }, { metadata }) => {
       <About />
       <Services />
       <Works />
-      <Study />
       <Stats />
       <Pricing />
       <Clients />
