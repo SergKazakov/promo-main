@@ -1,4 +1,3 @@
-import Notifications from "react-notify-toast"
 import Header from "../Header"
 import Footer from "../Footer"
 import Menu from "../Menu"
@@ -19,7 +18,6 @@ const Layout = ({ children }) => (
         content: "width=device-width, initial-scale=1, user-scalable=no",
       } ] }
     />
-    <Notifications />
     <Header />
     <Menu />
     <main className={ styles.main }>

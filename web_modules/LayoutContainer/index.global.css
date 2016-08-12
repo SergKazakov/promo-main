@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "slick-carousel/slick/slick.css";
+@import "animate.css";
 
 html {
   box-sizing: border-box;
