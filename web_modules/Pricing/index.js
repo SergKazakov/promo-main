@@ -9,7 +9,7 @@ const Pricing = () => (
       <Title
         title={ "Our pricing" }
         subtitle={
-          "You will be surprised pleasantly by our prices!"
+          "You will be surprised pleasantly by our prices"
         }
       />
       <div className={ css.list }>

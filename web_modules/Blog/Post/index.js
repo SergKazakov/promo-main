@@ -1,21 +1,21 @@
-import styles from "./index.css"
+import css from "./index.css"
 
 const {
   string,
 } = React.PropTypes
 
-const Post = ({ src, category, title, text, url }) => (
-  <div className={ styles.wrapper }>
+const Post = ({ src, category, title, text }) => (
+  <div className={ css.wrapper }>
     <div
-      className={ styles.img }
+      className={ css.img }
       style={ { backgroundImage: `url(${src})` } }
     />
-    <div className={ styles.content }>
-      <span className={ styles.category }>{ category }</span>
-      <h4 className={ styles.title }>{ title }</h4>
-      <p className={ styles.text }>{ text }</p>
-      <footer className={ styles.footer }>
-        <a className={ styles.link } href={ url }>{ 'read more' }</a>
+    <div className={ css.content }>
+      <span className={ css.category }>{ category }</span>
+      <h4 className={ css.title }>{ title }</h4>
+      <p className={ css.text }>{ text }</p>
+      <footer className={ css.footer }>
+        <span className={ css.emptyLink }>{ 'coming soon' }</span>
       </footer>
     </div>
   </div>

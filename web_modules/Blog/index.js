@@ -8,9 +8,7 @@ const Blog = () => (
     <Title
       title={ 'Our blog' }
       subtitle={
-        `Suspendisse sed eros mollis,
-        tincidunt felis eget,
-        interdum eratullam sit amet odio.`
+        "Our little blog about Ember.js secrets and application architecture"
       }
     />
     <div className={ styles.blog }>

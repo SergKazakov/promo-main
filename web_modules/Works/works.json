@@ -3,48 +3,49 @@
     "title": "Woobie",
     "category": "startup",
     "text": "Woobie is the first ever website dedicated to connect all the kennels and catteries into a joint network and make the search and purchase of a purebred pet as simple as possible.",
-    "url": "http://www.woobie.ru"
+    "to": "http://www.woobie.ru"
   },
   {
     "title": "Immersive video",
     "category": "startup",
     "text": "Imagine, if you will, a world where the videos you watch every day do more than just talk at you. What if you could reach into those videos and become a part of the experience?",
-    "url": "javascript:void(0)"
+    "to": "javascript:void(0)"
   },
   {
     "title": "Cashback service",
     "category": "startup",
     "text": "German startup. Aggregator of goods with the possibility of cashback. The service has a large number of partner stores and has more than 50 million products.",
-    "url": "https://www.itsyourworld.net"
+    "to": "https://www.itsyourworld.net"
   },
   {
     "title": "Dashboard",
     "category": "startup",
     "text": "The dashboard allows users to have multiple payment services such as paypal, skrill, stripe and etc.",
-    "url": "javascript:void(0)"
+    "to": "javascript:void(0)"
   },
   {
     "title": "Electronic exchange of bank guarantees",
     "category": "startup",
     "text": "Electronic exchange of bank guarantees",
-    "url": "javascript:void(0)"
-  },
-  {
-    "title": "Place for your project",
-    "category": "startup",
-    "text": "We offer the best conditions. Development of large and small projects under the guidance of leading developers. Leave a request in the form below.",
-    "url": "javascript:void(0)"
-  },
-  {
-    "title": "Events startup",
-    "category": "startup",
-    "text": "Creating a complex event in a few clicks",
-    "url": "javascript:void(0)"
+    "to": "javascript:void(0)"
   },
   {
     "title": "Maps startup",
     "category": "startup",
     "text": "Make a mark on the map and share with friends",
-    "url": "javascript:void(0)"
+    "to": "javascript:void(0)"
+  },
+  {
+    "title": "Events startup",
+    "category": "startup",
+    "text": "Creating a complex event in a few clicks",
+    "to": "javascript:void(0)"
+  },
+  {
+    "title": "Place for your project",
+    "category": "startup",
+    "text": "We offer the best conditions. Development of large and small projects under the guidance of leading developers. Leave a request in the form below.",
+    "to": "contact",
+    "smooth": true
   }
 ]

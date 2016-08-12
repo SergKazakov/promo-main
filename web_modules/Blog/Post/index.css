@@ -145,7 +145,8 @@
   margin-top: auto;
 }
 
-.link {
+.link,
+.emptyLink {
   font-size: 1.8rem;
   color: #fff;
   text-transform: capitalize;
@@ -157,7 +158,9 @@
     content: '»';
     margin-left: 0.5rem;
   }
+}
 
+.link {
   &:hover {
     border-color: inherit;
   }
