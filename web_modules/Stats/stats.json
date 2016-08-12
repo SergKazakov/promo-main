@@ -1,26 +1,26 @@
 [
   {
-    "icon": "heart",
+    "icon": "code",
     "amount": "10M+",
     "text": "Lines of Code"
   },
   {
-    "icon": "label",
+    "icon": "client",
     "amount": "100+",
     "text": "Happy Clients"
   },
   {
-    "icon": "thumb",
+    "icon": "experience",
     "amount": "8Y+",
     "text": "Development Experience"
   },
   {
-    "icon": "star",
+    "icon": "developer",
     "amount": "23",
     "text": "Number of Developers"
   },
   {
-    "icon": "bookmark",
+    "icon": "heart",
     "amount": "∞",
     "text": "In Love With Ember.js"
   }
