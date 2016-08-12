@@ -81,8 +81,8 @@
   }
 
   @media (--tablet) {
-    width: calc(100% / 3);
-    padding-bottom: calc(100% / 3);
+    width: 50%;
+    padding-bottom: 50%;
   }
 
   @media (--desktop) {
@@ -99,7 +99,6 @@
   bottom: 0;
   background: rgba(231, 76, 60, 0.8);
   color: #fff;
-  padding: 5rem;
   display: flex;
   flex-direction: column;
   opacity: 0;
@@ -107,6 +106,14 @@
 
   &:hover {
     color: #fff;
+  }
+
+  @media (--noDesktop) {
+    padding: 1.5rem;
+  }
+
+  @media (--desktop) {
+    padding: 5rem;
   }
 }
 

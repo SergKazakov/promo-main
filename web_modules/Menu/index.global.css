@@ -3,7 +3,7 @@
   height: 3rem;
   position: fixed;
   left: 2.5rem;
-  top: 5.1rem;
+  top: 4.1rem;
 
   &::after {
     content: '';

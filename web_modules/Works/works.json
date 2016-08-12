@@ -2,14 +2,14 @@
   {
     "title": "Woobie",
     "category": "startup",
-    "text": "Woobie is the first ever website dedicated to connect all the kennels and catteries into a joint network and make the search and purchase of a purebred pet as simple as possible. Pick criteria for a pet of your dream and choose particular breeds. Educate yourself by exploring our exclusive breeds descriptions and pictures and browse the lists of kittens and puppies. Schedule a meeting with your new best friend and arrange a purchase with the kennel. Follow these three simple steps to find a lovely member of your family. And one more thing — we are doing this because we really love pets.",
+    "text": "Woobie is the first ever website dedicated to connect all the kennels and catteries into a joint network and make the search and purchase of a purebred pet as simple as possible.",
     "url": "http://www.woobie.ru"
   },
   {
     "title": "Immersive video",
     "category": "startup",
-    "text": "Imagine, if you will, a world where the videos you watch every day do more than just talk at you. What if you could reach into those videos and become a part of the experience? You could engage with anything or anyone you choose. People, products, locations, music. Now you can be in control of your experience instead of being force fed your entertainment. We has developed a technology to make that all possible and more. Welcome to the future of entertainment.",
-    "url": "/"
+    "text": "Imagine, if you will, a world where the videos you watch every day do more than just talk at you. What if you could reach into those videos and become a part of the experience?",
+    "url": "javascript:void(0)"
   },
   {
     "title": "Cashback service",
@@ -20,29 +20,31 @@
   {
     "title": "Dashboard",
     "category": "startup",
-    "text": "Dashboard for payment system. The dashboard is a system's plugin with dynamic addition ember-routes, ember-templates, ember-controllers and etc. The dashboard allows users to have multiple payment services such as paypal, skrill, stripe and etc. The system allows third-party developers to extend the functionality of the dashboard by writing plugins.",
-    "url": "/"
+    "text": "The dashboard allows users to have multiple payment services such as paypal, skrill, stripe and etc.",
+    "url": "javascript:void(0)"
   },
   {
     "title": "Electronic exchange of bank guarantees",
     "category": "startup",
     "text": "Electronic exchange of bank guarantees",
-    "url": "/"
+    "url": "javascript:void(0)"
   },
   {
     "title": "Place for your project",
     "category": "startup",
     "text": "We offer the best conditions. Development of large and small projects under the guidance of leading developers. Leave a request in the form below.",
-    "url": "/"
+    "url": "javascript:void(0)"
   },
   {
-    "title": "t-shirt design",
+    "title": "Events startup",
     "category": "startup",
-    "url": "/"
+    "text": "Creating a complex event in a few clicks",
+    "url": "javascript:void(0)"
   },
   {
-    "title": "t-shirt design",
+    "title": "Maps startup",
     "category": "startup",
-    "url": "/"
+    "text": "Make a mark on the map and share with friends",
+    "url": "javascript:void(0)"
   }
 ]

@@ -1,10 +1,9 @@
 import Title from "../Title"
-import { Link } from "react-router"
-import styles from "./index.css"
+import css from "./index.css"
 import works from "./works.json"
 
 const Works = () => (
-  <section id="portfolio" className={ styles.wrapper }>
+  <section id="portfolio" className={ css.wrapper }>
     <Title
       title={ 'RECENT WORKS' }
       subtitle={
@@ -12,13 +11,13 @@ const Works = () => (
         but also the leap scrambled it to make a type.`
       }
     />
-    <ul className={ styles.list }>
+    <ul className={ css.list }>
       {
         works.map(({ text, title, category, url }, index) => {
           const src = require(`./${++index}.jpg`)
 
           const props = {
-            className: styles.listItem,
+            className: css.listItem,
             style: {
               backgroundImage: `url(${src})`,
             },
@@ -26,11 +25,11 @@ const Works = () => (
 
           return (
             <li key={ index } { ...props }>
-              <Link to={ url } className={ styles.overlay }>
-                <p className={ styles.text }>{ text }</p>
-                <h3 className={ styles.title }>{ title }</h3>
-                <span className={ styles.category }>{ category }</span>
-              </Link>
+              <a href={ url } className={ css.overlay }>
+                <p className={ css.text }>{ text }</p>
+                <h3 className={ css.title }>{ title }</h3>
+                <span className={ css.category }>{ category }</span>
+              </a>
             </li>
           )
         })
