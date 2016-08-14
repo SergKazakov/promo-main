@@ -1,7 +1,7 @@
 import Header from "../Header"
 import Footer from "../Footer"
 import Menu from "../Menu"
-import GoogleAnalyticsTracker from "../GoogleAnalyticsTracker"
+import Analytics from "../Analytics"
 import "./index.global.css"
 import css from "./index.css"
 
@@ -15,7 +15,7 @@ const {
 export default class Layout extends Component {
   render() {
     return (
-      <GoogleAnalyticsTracker
+      <Analytics
         params={ this.props.params }
         className={ css.layout }
       >
@@ -31,7 +31,7 @@ export default class Layout extends Component {
           { this.props.children }
         </main>
         <Footer />
-      </GoogleAnalyticsTracker>
+      </Analytics>
     )
   }
 }

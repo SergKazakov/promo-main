@@ -1,6 +1,8 @@
 import ga from "react-google-analytics"
-const GoogleAnalyticsInitiailizer = ga.Initializer
+import ym from "react-yandex-metrika"
 
+const Ga = ga.Initializer
+const Ym = ym.Initializer
 const isProduction = process.env.NODE_ENV === "production"
 const isClient = typeof window !== "undefined"
 
@@ -11,21 +13,13 @@ const {
   },
 } = React
 
-export default class GoogleAnalyticsTracker extends Component {
-
-  static propTypes = {
-    params: object.isRequired,
-  };
-
-  static contextTypes = {
-    metadata: object.isRequired,
-  };
-
+class Analytics extends Component {
   componentWillMount() {
     if (isClient) {
       const { pkg } = this.context.metadata
       if (isProduction) {
         ga("create", pkg.googleAnalyticsUA, "auto")
+        ym.init([ pkg.yandexMetrika ])
       }
       else {
         console.info("ga.create", pkg.googleAnalyticsUA)
@@ -56,8 +50,19 @@ export default class GoogleAnalyticsTracker extends Component {
     return (
       <div className={ this.props.className }>
         { this.props.children }
-        <GoogleAnalyticsInitiailizer />
+        <Ga />
+        <Ym />
       </div>
     )
   }
 }
+
+Analytics.propTypes = {
+  params: object.isRequired,
+}
+
+Analytics.contextTypes = {
+  metadata: object.isRequired,
+}
+
+export default Analytics
