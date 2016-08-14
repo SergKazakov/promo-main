@@ -119,7 +119,6 @@ export const makeConfig = (config = {}) => {
         require("postcss-font-magician")({
           formats: "woff2 woff",
         }),
-        require("css-mqpacker"),
         require("postcss-triangle"),
         require("postcss-center"),
         require("postcss-sorting")({ "sort-order": "yandex" }),

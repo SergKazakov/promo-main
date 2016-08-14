@@ -1,34 +1,43 @@
 import Header from "../Header"
 import Footer from "../Footer"
 import Menu from "../Menu"
+import GoogleAnalyticsTracker from "../GoogleAnalyticsTracker"
 import "./index.global.css"
-import styles from "./index.css"
+import css from "./index.css"
 
 const {
-  oneOfType,
-  array,
-  object,
-} = React.PropTypes
+  Component,
+  PropTypes: {
+    object,
+  },
+} = React
 
-const Layout = ({ children }) => (
-  <div className={ styles.layout }>
-    <Helmet
-      meta={ [ {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1, user-scalable=no",
-      } ] }
-    />
-    <Header />
-    <Menu />
-    <main className={ styles.main }>
-      { children }
-    </main>
-    <Footer />
-  </div>
-)
+export default class Layout extends Component {
+  render() {
+    return (
+      <GoogleAnalyticsTracker
+        params={ this.props.params }
+        className={ css.layout }
+      >
+        <Helmet
+          meta={ [ {
+            name: "viewport",
+            content: "width=device-width, initial-scale=1, user-scalable=no",
+          } ] }
+        />
+        <Header />
+        <Menu />
+        <main className={ css.main }>
+          { this.props.children }
+        </main>
+        <Footer />
+      </GoogleAnalyticsTracker>
+    )
+  }
+}
 
 Layout.propTypes = {
-  children: oneOfType([ array, object ]),
+  params: object,
 }
 
 Layout.contextTypes = {

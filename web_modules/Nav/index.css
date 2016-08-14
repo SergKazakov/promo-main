@@ -1,6 +1,4 @@
 .wrapper {
-  margin-left: auto;
-
   @media (--noDesktop) {
     display: none;
   }
