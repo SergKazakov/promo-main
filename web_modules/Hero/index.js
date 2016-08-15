@@ -2,13 +2,13 @@ import Divider from "../Divider"
 import { Link } from "react-scroll"
 import { Link as ScrollLink } from "react-scroll"
 import Svg from "react-svg-inline"
-import styles from "./index.css"
+import css from "./index.css"
 
 const Hero = () => (
-  <section className={ styles.wrapper }>
-    <div className={ styles.inner }>
+  <section className={ css.wrapper }>
+    <div className={ css.inner }>
       <video
-        className={ styles.video }
+        className={ css.video }
         poster={ require("./poster.jpg") }
         autoPlay
         loop
@@ -22,21 +22,21 @@ const Hero = () => (
           type="video/mp4"
         />
       </video>
-      <div className={ styles.content }>
-        <h2 className={ styles.title }>
+      <div className={ css.content }>
+        <h2 className={ css.title }>
           { 'OUTSOURCING & EMBER.JS CONSULTING SERVICES' }
         </h2>
         <Divider theme={ 'white' } />
-        <h3 className={ styles.subtitle }>
+        <h3 className={ css.subtitle }>
           { "We'll help you to develop ambitious Ember.js applications" }
         </h3>
-        <p className={ styles.text }>
+        <p className={ css.text }>
           {
             "Ember.js Training & Code Audits & Hire developers & Startup MVP"
           }
         </p>
         <ScrollLink
-          className={ styles.btn }
+          className={ css.btn }
           to={ 'contact' }
           smooth
           duration={ 2000 }
@@ -46,7 +46,7 @@ const Hero = () => (
       </div>
     </div>
     <Link
-      className={ styles.anchor }
+      className={ css.anchor }
       to={ 'features' }
       smooth
       duration={ 2000 }

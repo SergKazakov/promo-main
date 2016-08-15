@@ -1,19 +1,19 @@
 import Svg from "react-svg-inline"
-import styles from "./index.css"
+import css from "./index.css"
 import social from "./social.json"
 
 const Social = () => (
-  <ul className={ styles.social }>
+  <ul className={ css.social }>
     {
       social.map(({ name, url }, index) => (
-          <li key={ index } className={ styles.socialItem }>
+          <li key={ index } className={ css.socialItem }>
             <a
               href={ url }
-              className={ styles.socialLink }
+              className={ css.socialLink }
               target={ "_blank" }
             >
               <Svg
-                className={ styles.socialSvg }
+                className={ css.socialSvg }
                 svg={ require(`./${name}.svg`) }
                 width="2rem"
               />
