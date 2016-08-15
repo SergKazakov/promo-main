@@ -10,6 +10,6 @@ const config = {
 }
 
 ftpDeploy.deploy(config, err => {
-  if (err) console.log(err)
-  else console.log("finished")
+  if (err) return console.log(err)
+  console.log("finished")
 })
