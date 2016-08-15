@@ -9,16 +9,16 @@ const Hero = () => (
     <div className={ styles.inner }>
       <video
         className={ styles.video }
-        poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg"
+        poster={ require("./poster.jpg") }
         autoPlay
         loop
       >
         <source
-          src="http://thenewcode.com/assets/videos/polina.webm"
+          src={ require("!!file!./video.mp4") }
           type="video/webm"
         />
         <source
-          src="http://thenewcode.com/assets/videos/polina.mp4"
+          src={ require("!!file!./video.webm") }
           type="video/mp4"
         />
       </video>
