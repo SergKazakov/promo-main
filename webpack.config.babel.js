@@ -44,7 +44,7 @@ export const makeConfig = (config = {}) => {
           include: path.resolve(__dirname, "web_modules"),
           loader: ExtractTextPlugin.extract(
             "style",
-            [ `css?modules&localIdentName=${
+            [ `css?modules&importLoaders=1&localIdentName=${
                 config.production
                 ? "[hash:base64:5]"
                 : "[path][name]--[local]--[hash:base64:5]"

@@ -1,6 +1,6 @@
 import { Link } from "react-router"
 import classnames from "classnames"
-import styles from "./index.css"
+import css from "./index.css"
 
 const {
   string,
@@ -13,7 +13,7 @@ const Button = ({ type, to, className, disabled, children }) => {
 
   const props = {
     disabled,
-    className: classnames(styles[type], className),
+    className: classnames(css[type], className),
     ...isLink && { to },
   }
 

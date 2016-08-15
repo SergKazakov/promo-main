@@ -6,6 +6,7 @@ import FormsyText from "formsy-material-ui/lib/FormsyText"
 import RaisedButton from "material-ui/RaisedButton"
 
 import pkg from "../../../package.json"
+import "./index.global.css"
 import css from "./index.css"
 
 const ToastMessageFactory = React.createFactory(ToastMessage.animation)
