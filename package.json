@@ -10,7 +10,8 @@
     "pretest": "npm run lint",
     "test": "npm run build",
     "precommit": "npm run pretest",
-    "prepush": "npm run pretest"
+    "prepush": "npm run pretest",
+    "deploy": "npm run build && node ./scripts/deploy.js"
   },
   "contactUrl": "https://docs.google.com/forms/d/1PMAvWDgx8buxlQyHPjP7dRwsCI7fnWbFGovquu9pzCs/formResponse",
   "googleAnalyticsUA": "UA-77743196-1",
@@ -135,7 +136,7 @@
     "react-svg-inline": "^1.1.0",
     "react-toastr": "^2.8.0",
     "react-topbar-progress-indicator": "^1.0.0",
-    "react-yandex-metrika": "^1.0.1",
+    "react-ym": "0.0.7",
     "redux": "^3.0.0",
     "slick-carousel": "^1.6.0",
     "toastr": "^2.1.2",

@@ -1,8 +1,7 @@
 import ga from "react-google-analytics"
-import ym from "react-yandex-metrika"
+import { ym } from "react-ym"
 
 const Ga = ga.Initializer
-const Ym = ym.Initializer
 const isProduction = process.env.NODE_ENV === "production"
 const isClient = typeof window !== "undefined"
 
@@ -19,7 +18,7 @@ class Analytics extends Component {
       const { pkg } = this.context.metadata
       if (isProduction) {
         ga("create", pkg.googleAnalyticsUA, "auto")
-        ym.init([ pkg.yandexMetrika ], {
+        ym.initialize(pkg.yandexMetrika, {
           clickmap: true,
           trackLinks: true,
           accurateTrackBounce: true,
@@ -56,8 +55,7 @@ class Analytics extends Component {
     return (
       <div className={ this.props.className }>
         { this.props.children }
-        <Ga />
-        <Ym />
+        { isClient && isProduction && <Ga /> }
       </div>
     )
   }
