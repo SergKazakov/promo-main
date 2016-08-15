@@ -16,7 +16,6 @@ const Social = () => (
                 className={ styles.socialSvg }
                 svg={ require(`./${name}.svg`) }
                 width="2rem"
-                height="auto"
               />
             </a>
           </li>

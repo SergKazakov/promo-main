@@ -129,6 +129,7 @@ export const makeConfig = (config = {}) => {
         }),
         require("postcss-triangle"),
         require("postcss-center"),
+        require("postcss-flexbugs-fixes"),
         require("postcss-sorting")({ "sort-order": "yandex" }),
       ]
     },

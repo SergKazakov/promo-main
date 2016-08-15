@@ -10,6 +10,10 @@
   @media (--tablet) {
     flex-direction: column;
   }
+
+  @media (--noMobile) {
+    align-items: flex-start;
+  }
 }
 
 .img {
@@ -21,6 +25,7 @@
 .content {
   @media (--desktop) {
     padding: 0 0 0 7.5rem;
+    width: calc(665 / 1170 * 100%);
   }
 }
 
