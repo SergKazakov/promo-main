@@ -49,7 +49,7 @@
 
 .title {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
 
   @media (--mobile) {
     font-size: 3rem;

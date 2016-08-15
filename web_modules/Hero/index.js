@@ -24,7 +24,7 @@ const Hero = () => (
       </video>
       <div className={ styles.content }>
         <h2 className={ styles.title }>
-          { 'EMBER.JS CONSULTING SERVICES & OUTSOURCING' }
+          { 'OUTSOURCING & EMBER.JS CONSULTING SERVICES' }
         </h2>
         <Divider theme={ 'white' } />
         <h3 className={ styles.subtitle }>
