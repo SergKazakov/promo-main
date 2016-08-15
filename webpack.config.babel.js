@@ -114,6 +114,14 @@ export const makeConfig = (config = {}) => {
                 "--noMobile": "(min-width: 768px)",
               },
             },
+            customProperties: {
+              variables: {
+                white: "#fff",
+                black: "#000",
+                primary: "#e74c3c",
+                gray: "#999",
+              },
+            },
           },
         }),
         require("postcss-font-magician")({

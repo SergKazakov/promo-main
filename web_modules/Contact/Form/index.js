@@ -14,14 +14,25 @@ class ContactForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
+  state = {
+    isSubmitted: false,
+  }
+
+  toggleButtonState() {
+    this.setState({ isSubmitted: !this.state.isSubmitted })
+  }
+
   handleSubmit(e) {
     e.preventDefault()
+
+    this.toggleButtonState()
 
     fetch(pkg.contactUrl, {
       method: "POST",
       body: new FormData(this.contactForm),
     })
     .finally(() => {
+      setTimeout(() => this.toggleButtonState(), 5000)
       this.toast.success(
         "We'll contact you as soon as possible.",
         "Success",
@@ -70,7 +81,11 @@ class ContactForm extends React.Component {
             floatingLabel
             required
           />
-          <Button>{ 'send message' }</Button>
+          <Button
+            disabled={ this.state.isSubmitted }
+          >
+            { 'send message' }
+          </Button>
         </form>
       </div>
     )
