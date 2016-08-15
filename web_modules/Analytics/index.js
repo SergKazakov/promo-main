@@ -19,7 +19,13 @@ class Analytics extends Component {
       const { pkg } = this.context.metadata
       if (isProduction) {
         ga("create", pkg.googleAnalyticsUA, "auto")
-        ym.init([ pkg.yandexMetrika ])
+        ym.init([ pkg.yandexMetrika ], {
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+          webvisor: true,
+          trackHash: true,
+        })
       }
       else {
         console.info("ga.create", pkg.googleAnalyticsUA)
