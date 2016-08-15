@@ -1,6 +1,6 @@
 {
   "name": "promo-main",
-  "homepage": "http://embermvp.com",
+  "homepage": "https://embermvp.com",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylefmt -R web_modules && stylelint \"web_modules/**/*.css\"",
