@@ -16,13 +16,13 @@
 }
 
 .socialSvg {
-  color: #999;
+  color: var(--nobel);
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   &:hover {
-    color: #e74c3c;
+    color: var(--cinnabar);
   }
 
   & svg {

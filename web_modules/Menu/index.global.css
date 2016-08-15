@@ -12,7 +12,7 @@
     left: -1rem;
     right: -1rem;
     bottom: -1rem;
-    background: #373a47;
+    background: var(--arsenic);
     z-index: -1;
   }
 
@@ -22,22 +22,22 @@
 }
 
 .bm-burger-bars {
-  background: #fff;
+  background: white;
 }
 
 .bm-cross {
-  background: #fff;
+  background: white;
 }
 
 .bm-menu {
-  background: #373a47;
+  background: var(--arsenic);
 }
 
 .bm-list {
   padding: 4rem 2.5rem;
 
   &__link {
-    color: #fff;
+    color: white;
     font-size: 1.8rem;
     font-weight: bold;
     text-transform: uppercase;

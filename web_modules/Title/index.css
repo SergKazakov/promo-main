@@ -13,12 +13,12 @@
 
 .titleGray {
   composes: title;
-  color: #6a6a6a;
+  color: var(--dimGray);
 }
 
 .titleWhite {
   composes: title;
-  color: #fff;
+  color: white;
 }
 
 .subtitle {
@@ -29,10 +29,10 @@
 
 .subtitleGray {
   composes: subtitle;
-  color: #999;
+  color: var(--nobel);
 }
 
 .subtitleWhite {
   composes: subtitle;
-  color: #fff;
+  color: white;
 }

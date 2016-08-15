@@ -10,7 +10,7 @@
 .oops {
   font-size: 4rem;
   line-height: 4rem;
-  color: #ddd;
+  color: var(--gainsboro);
 }
 
 .title {

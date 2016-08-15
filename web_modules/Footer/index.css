@@ -1,5 +1,5 @@
 .wrapper {
-  background: #202020;
+  background: var(--nero);
   padding: 3.5rem 0;
 }
 
@@ -14,7 +14,7 @@
 
 .copyright {
   font-size: 1.4rem;
-  color: #999;
+  color: var(--nobel);
 
   @media (--mobile) {
     text-align: center;

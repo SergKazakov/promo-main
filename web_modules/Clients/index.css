@@ -1,6 +1,6 @@
 .wrapper {
   composes: wrapper from '../LayoutContainer/index.css';
-  background: #f4f5f9;
+  background: var(--solitude);
 }
 
 .list {
@@ -27,7 +27,7 @@
 
 .listItem {
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
-  background: #fff;
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;

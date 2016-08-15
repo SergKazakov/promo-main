@@ -1,7 +1,7 @@
 .wrapper {
   composes: wrapper from '../LayoutContainer/index.css';
-  background: #f4f5f9;
-  border-top: 1px solid #d8d9db;
+  background: var(--solitude);
+  border-top: 1px solid var(--athensGrey);
 
   @media (--desktop) {
     padding-bottom: 0;

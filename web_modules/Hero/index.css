@@ -39,7 +39,7 @@
   background-position: center bottom;
   background-repeat: no-repeat;
   padding: 0 1.5rem;
-  color: #fff;
+  color: white;
 }
 
 .title,
@@ -121,9 +121,9 @@
 .anchor {
   width: 6.4rem;
   height: 6.4rem;
-  background: #f4f5f9;
+  background: var(--solitude);
   border-radius: 50%;
-  color: #e74c3c;
+  color: var(--cinnabar);
   top: calc(100% - 3.2rem);
   left: center;
   box-shadow: 0 0 rgba(232, 76, 61, 0.7);

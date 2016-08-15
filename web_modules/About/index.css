@@ -1,6 +1,6 @@
 .wrapper {
   composes: wrapper from '../LayoutContainer/index.css';
-  border-top: 1px solid #d8d9db;
+  border-top: 1px solid var(--athensGrey);
 }
 
 .about {
@@ -31,17 +31,17 @@
 
 .title {
   font-size: 3.6rem;
-  color: #6a6a6a;
+  color: var(--dimGray);
   text-transform: uppercase;
   font-weight: bold;
   padding: 0 0 0 3.5rem;
-  border-left: 6px solid #e74c3c;
+  border-left: 6px solid var(--cinnabar);
   margin: 0;
 }
 
 .text {
   font-size: 1.4rem;
-  color: #999;
+  color: var(--nobel);
   line-height: 2;
   margin: 3rem 0;
 }

@@ -16,8 +16,8 @@
   &:hover {
     & .icon {
       transform: rotate(45deg);
-      border-color: #e74c3c;
-      color: #e74c3c;
+      border-color: var(--cinnabar);
+      color: var(--cinnabar);
     }
 
     & .icon svg {
@@ -25,13 +25,13 @@
     }
 
     & .title {
-      color: #e74c3c;
+      color: var(--cinnabar);
     }
   }
 }
 
 .icon {
-  color: #e5e5e5;
+  color: var(--gainsboro);
   width: 7.3rem;
   height: 7.3rem;
   border: 1px solid;
@@ -48,7 +48,7 @@
 }
 
 .title {
-  color: #6a6a6a;
+  color: var(--dimGray);
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -62,7 +62,7 @@
     content: '';
     width: 4rem;
     height: 0.1rem;
-    background: #6a6a6a;
+    background: var(--dimGray);
     bottom: 0;
     left: center;
   }
@@ -70,6 +70,6 @@
 
 .text {
   font-size: 1.4rem;
-  color: #999;
+  color: var(--nobel);
   line-height: 1.6;
 }

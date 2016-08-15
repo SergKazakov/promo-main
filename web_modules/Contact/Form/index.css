@@ -1,5 +1,5 @@
 .wrapper {
-  background: #fff;
+  background: white;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
 
   @media (--mobile) {
@@ -26,7 +26,7 @@
 
 :global(.mui-textfield--float-label > label) {
   font-size: 1.4rem;
-  color: #999;
+  color: var(--nobel);
   font-weight: bold;
   overflow: visible;
 }

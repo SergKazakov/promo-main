@@ -1,6 +1,6 @@
 .wrapper {
   composes: wrapper from '../LayoutContainer/index.css';
-  background: #f4f5f9;
+  background: var(--solitude);
 }
 
 .inner {
@@ -21,7 +21,7 @@
 }
 
 .list {
-  background: #fff;
+  background: white;
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
 
   @media (--mobile) {
@@ -64,13 +64,13 @@
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
-    background: #f4f5f9;
+    background: var(--solitude);
     font-size: 0;
     display: block;
   }
 
   & :global(.slick-dots .slick-active button) {
-    background: #e74c3c;
+    background: var(--cinnabar);
   }
 }
 
@@ -83,8 +83,8 @@
   height: 7.3rem;
   border-radius: 0.3rem;
   transform: rotate(45deg);
-  color: #fff;
-  background: #e74c3c;
+  color: white;
+  background: var(--cinnabar);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,7 +99,7 @@
 .listText {
   text-align: center;
   font-size: 1.4rem;
-  color: #999;
+  color: var(--nobel);
   line-height: 2;
   margin: 2.5rem 0 4.5rem;
 }

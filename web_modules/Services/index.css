@@ -1,6 +1,6 @@
 .wrapper {
   composes: wrapper from '../LayoutContainer/index.css';
-  background: #202020;
+  background: var(--nero);
 
   @media (--desktop) {
     display: flex;
@@ -35,7 +35,7 @@
 
 .title {
   composes: title from '../About/index.css';
-  color: #fff;
+  color: white;
 
   @media (--mobile) {
     margin: 2rem 1.5rem 4rem;
@@ -43,7 +43,7 @@
 
   @media (--noMobile) {
     padding: 0 3.5rem 0 0;
-    border-right: 6px solid #e74c3c;
+    border-right: 6px solid var(--cinnabar);
     border-left: 0;
   }
 
@@ -101,7 +101,7 @@
 
   & :global(.slick-dots button) {
     font-size: 0;
-    background: #3e3e3e;
+    background: var(--charcoal);
 
     @media (--mobile) {
       height: 0.1rem;
@@ -115,7 +115,7 @@
   }
 
   & :global(.slick-dots .slick-active button) {
-    background: #e74c3c;
+    background: var(--cinnabar);
 
     @media (--mobile) {
       height: 0.2rem;
