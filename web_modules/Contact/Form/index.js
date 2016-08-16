@@ -36,13 +36,21 @@ class ContactForm extends React.Component {
     })
   }
 
-  handleSubmit() {
+  handleSubmit(data, resetForm) {
+    const formData = new FormData()
+
+    for (const key in data) {
+      const value = data[key]
+
+      formData.append(`entry.${key}`, value)
+    }
+
     fetch(pkg.contactUrl, {
       method: "POST",
-      body: new FormData(this.contactForm),
+      body: formData,
     })
     .finally(() => {
-      this.contactForm.reset()
+      resetForm()
       this.toast.success(
         "We'll contact you as soon as possible.",
         "Success",
@@ -144,32 +152,31 @@ class ContactForm extends React.Component {
         <MuiThemeProvider>
           <Formsy.Form
             noValidate
-            ref={ c => this.contactForm = c }
             onValid={ this.handleEnableButton }
             onInvalid={ this.handleDisableButton }
             onValidSubmit={ this.handleSubmit }
           >
             <FormsyText
               { ...inputProps }
-              name="entry.896607324"
+              name="896607324"
               floatingLabelText={ "Name" }
             />
             <FormsyText
               { ...inputProps }
               type="email"
-              name="entry.708584843"
+              name="708584843"
               validations="isEmail"
               floatingLabelText={ "Email" }
               validationError={ emailError }
             />
             <FormsyText
               { ...inputProps }
-              name="entry.2092706974"
+              name="2092706974"
               floatingLabelText={ "Subject" }
             />
             <FormsyText
               { ...textareaProps }
-              name="entry.1358151322"
+              name="1358151322"
               floatingLabelText={ "Message" }
               multiLine
               rows={ 0 }
