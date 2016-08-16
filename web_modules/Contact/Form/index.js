@@ -15,22 +15,22 @@ class ContactForm extends React.Component {
   constructor(props) {
     super(props)
 
-    this.enableButton  = this.enableButton.bind(this)
-    this.disableButton = this.disableButton.bind(this)
-    this.handleSubmit  = this.handleSubmit.bind(this)
+    this.handleEnableButton = this.handleEnableButton.bind(this)
+    this.handleDisableButton = this.handleDisableButton.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   state = {
     isSubmitted: false,
   }
 
-  enableButton() {
+  handleEnableButton() {
     this.setState({
       isSubmitted: true,
     })
   }
 
-  disableButton() {
+  handleDisableButton() {
     this.setState({
       isSubmitted: false,
     })
@@ -54,7 +54,6 @@ class ContactForm extends React.Component {
   }
 
   render() {
-    const requiredError = "This field can't be blank"
     const emailError = "This field must be a valid email address"
 
     const commonProps = {
@@ -63,18 +62,21 @@ class ContactForm extends React.Component {
         width: "auto",
         height: "auto",
         fontFamily: "inherit",
+        padding: "1.5rem 0 0",
         margin: "0 0 3rem",
         lineHeight: "initial",
+        fontSize: "1.4rem",
       },
       underlineStyle: {
         bottom: 0,
       },
       floatingLabelStyle: {
-        top: 0,
+        top: "1.5rem",
+        left: 0,
+        right: 0,
         fontWeight: "bold",
-      },
-      floatingLabelFocusStyle: {
-        transform: "scale(0.75) translate(0px, -15px)",
+        color: "#999",
+        lineHeight: "3.2rem",
       },
       errorStyle: {
         top: "calc(100% + 0.5rem)",
@@ -95,6 +97,10 @@ class ContactForm extends React.Component {
         height: "3.2rem",
         display: "block",
       },
+      floatingLabelFocusStyle: {
+        top: 0,
+        transform: "scale(0.75)",
+      },
     }
 
     const textareaProps = {
@@ -103,6 +109,28 @@ class ContactForm extends React.Component {
         height: "100%",
         margin: 0,
         display: "block",
+      },
+      floatingLabelFocusStyle: {
+        top: "-0.5rem",
+        transform: "scale(0.75)",
+      },
+    }
+
+    const buttonProps = {
+      backgroundColor: "#e74c3c",
+      style : {
+        height: "auto",
+        verticalAlign: "top",
+        minWidth: 0,
+      },
+      labelStyle: {
+        fontFamily: "Open Sans",
+        fontWeight: "bold",
+        fontSize: "1.4rem",
+        padding: "1.75rem 4rem",
+        display: "block",
+        borderRadius: "0.5rem",
+        color: "#fff",
       },
     }
 
@@ -125,7 +153,6 @@ class ContactForm extends React.Component {
               { ...inputProps }
               name="entry.896607324"
               floatingLabelText={ "Name" }
-              validationError={ requiredError }
             />
             <FormsyText
               { ...inputProps }
@@ -139,20 +166,18 @@ class ContactForm extends React.Component {
               { ...inputProps }
               name="entry.2092706974"
               floatingLabelText={ "Subject" }
-              validationError={ requiredError }
             />
             <FormsyText
               { ...textareaProps }
               name="entry.1358151322"
               floatingLabelText={ "Message" }
-              validationError={ requiredError }
               multiLine
               rows={ 0 }
             />
             <RaisedButton
+              { ...buttonProps }
               type="submit"
               label="send message"
-              secondary
               disabled={ !this.state.isSubmitted }
             />
           </Formsy.Form>
