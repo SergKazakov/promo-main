@@ -36,7 +36,7 @@ class ContactForm extends React.Component {
     })
   }
 
-  handleSubmit(data, resetForm) {
+  handleSubmit(data) {
     const formData = new FormData()
 
     for (const key in data) {
@@ -50,7 +50,7 @@ class ContactForm extends React.Component {
       body: formData,
     })
     .finally(() => {
-      resetForm()
+      this.contactForm.reset()
       this.toast.success(
         "We'll contact you as soon as possible.",
         "Success",
@@ -152,6 +152,7 @@ class ContactForm extends React.Component {
         <MuiThemeProvider>
           <Formsy.Form
             noValidate
+            ref={ c => this.contactForm = c }
             onValid={ this.handleEnableButton }
             onInvalid={ this.handleDisableButton }
             onValidSubmit={ this.handleSubmit }

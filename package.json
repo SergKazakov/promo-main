@@ -9,9 +9,8 @@
     "build": "phenomic build",
     "pretest": "npm run lint",
     "test": "npm run build",
-    "precommit": "npm run pretest",
-    "prepush": "npm run pretest",
-    "deploy": "npm run build && node ./scripts/deploy.js"
+    "precommit": "npm test",
+    "deploy": "npm test && node ./scripts/deploy.js"
   },
   "contactUrl": "https://docs.google.com/forms/d/1PMAvWDgx8buxlQyHPjP7dRwsCI7fnWbFGovquu9pzCs/formResponse",
   "googleAnalyticsUA": "UA-77743196-1",
