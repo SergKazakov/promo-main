@@ -1,9 +1,3 @@
-.wrapper {
-  @media (--noDesktop) {
-    display: none;
-  }
-}
-
 .nav {
   display: flex;
 }

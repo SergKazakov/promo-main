@@ -1,6 +1,7 @@
 import Divider from "../Divider"
 import { Link } from "react-scroll"
 import { Link as ScrollLink } from "react-scroll"
+import Media from "react-responsive"
 import Svg from "react-svg-inline"
 import css from "./index.css"
 
@@ -27,14 +28,16 @@ const Hero = () => (
           { 'OUTSOURCING & EMBER.JS CONSULTING SERVICES' }
         </h2>
         <Divider theme={ 'white' } />
-        <h3 className={ css.subtitle }>
-          { "We'll help you to develop ambitious Ember.js applications" }
-        </h3>
-        <p className={ css.text }>
-          {
-            "Ember.js Training & Code Audits & Hire developers & Startup MVP"
-          }
-        </p>
+        <Media minWidth={ 401 }>
+          <h3 className={ css.subtitle }>
+            { "We'll help you to develop ambitious Ember.js applications" }
+          </h3>
+          <p className={ css.text }>
+            {
+              "Ember.js Training & Code Audits & Hire developers & Startup MVP"
+            }
+          </p>
+        </Media>
         <ScrollLink
           className={ css.btn }
           to={ 'contact' }

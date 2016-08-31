@@ -1,10 +1,13 @@
 import { Link as ScrollLink } from "react-scroll"
+import Media from "react-responsive"
 import css from "./index.css"
 
 const About = () => (
   <section id="about" className={ css.wrapper }>
     <div className={ css.about }>
-      <img className={ css.img } src={ require("./about.jpg") } />
+      <Media minWidth={ 1025 }>
+        <img className={ css.img } src={ require("./about.jpg") } />
+      </Media>
       <div className={ css.content }>
         <h3 className={ css.title }>{ 'OUR HISTORY' }</h3>
         <p className={ css.text }>

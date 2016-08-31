@@ -1,5 +1,6 @@
 import Item from "./Item"
 import Slider from "react-slick"
+import Media from "react-responsive"
 import styles from "./index.css"
 import services from "./services.json"
 
@@ -40,7 +41,9 @@ const Services = () => {
           </Slider>
         </div>
       </div>
-      <div className={ styles.img } />
+      <Media minWidth={ 1025 }>
+        <div className={ styles.img } />
+      </Media>
     </section>
   )
 }

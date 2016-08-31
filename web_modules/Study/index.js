@@ -2,6 +2,7 @@ import Title from "../Title"
 import Button from "../Button"
 import Svg from "react-svg-inline"
 import Slider from "react-slick"
+import Media from "react-responsive"
 import styles from "./index.css"
 import studies from "./studies.json"
 
@@ -47,7 +48,9 @@ const Study = () => {
             }
           </Slider>
         </div>
-        <img className={ styles.img } src={ require("./study.jpg") } />
+        <Media minWidth={ 768 }>
+          <img className={ styles.img } src={ require("./study.jpg") } />
+        </Media>
       </div>
     </section>
   )

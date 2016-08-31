@@ -16,12 +16,6 @@
   }
 }
 
-.img {
-  @media (--noDesktop) {
-    display: none;
-  }
-}
-
 .content {
   @media (--desktop) {
     padding: 0 0 0 7.5rem;

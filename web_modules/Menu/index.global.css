@@ -15,10 +15,6 @@
     background: var(--arsenic);
     z-index: -1;
   }
-
-  @media (--desktop) {
-    display: none;
-  }
 }
 
 .bm-burger-bars {

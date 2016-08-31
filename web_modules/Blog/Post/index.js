@@ -1,3 +1,4 @@
+import Media from "react-responsive"
 import css from "./index.css"
 
 const {
@@ -13,7 +14,12 @@ const Post = ({ src, category, title, text }) => (
     <div className={ css.content }>
       <span className={ css.category }>{ category }</span>
       <h4 className={ css.title }>{ title }</h4>
-      <p className={ css.text }>{ text }</p>
+      {
+        text &&
+        <Media minWidth={ 401 }>
+          <p className={ css.text }>{ text }</p>
+        </Media>
+      }
       <footer className={ css.footer }>
         <span className={ css.emptyLink }>{ 'coming soon' }</span>
       </footer>
