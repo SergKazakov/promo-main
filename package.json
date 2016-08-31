@@ -2,6 +2,7 @@
   "name": "promo-main",
   "homepage": "https://embermvp.com",
   "scripts": {
+    "git:add": "git add -A",
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylefmt -R web_modules && stylelint \"web_modules/**/*.css\"",
     "lint": "npm-run-all --parallel lint:*",
@@ -9,9 +10,12 @@
     "build": "phenomic build",
     "pretest": "npm run lint",
     "test": "npm run build",
-    "precommit": "npm test",
     "deploy": "npm test && node ./scripts/deploy.js"
   },
+  "pre-commit": [
+    "test",
+    "git:add"
+  ],
   "contactUrl": "https://docs.google.com/forms/d/1PMAvWDgx8buxlQyHPjP7dRwsCI7fnWbFGovquu9pzCs/formResponse",
   "googleAnalyticsUA": "UA-77743196-1",
   "yandexMetrika": "37365815",
@@ -68,18 +72,23 @@
   "stylelint": {
     "extends": "stylelint-config-standard",
     "rules": {
-      "selector-pseudo-class-no-unknown": [ true, {
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
           "ignorePseudoClasses": [
             "global"
           ]
         }
       ],
-      "property-no-unknown": [ true, {
-        "ignoreProperties": [
-          "composes",
-          "triangle"
-        ]
-      }]
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "composes",
+            "triangle"
+          ]
+        }
+      ]
     }
   },
   "devDependencies": {
@@ -100,11 +109,10 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "ftp-deploy": "^1.1.0",
-    "husky": "^0.11.6",
     "invariant": "^2.1.1",
     "json-loader": "^0.5.2",
     "npm-run-all": "^3.0.0",
-    "phenomic": "^0.15.0",
+    "phenomic": "^0.16.2",
     "postcss-center": "^1.0.0",
     "postcss-cssnext": "^2.4.0",
     "postcss-flexbugs-fixes": "^2.0.0",
@@ -113,6 +121,7 @@
     "postcss-loader": "^0.11.1",
     "postcss-sorting": "^1.6.1",
     "postcss-triangle": "^1.0.1",
+    "pre-commit": "^1.1.3",
     "raw-loader": "^0.5.1",
     "style-loader": "^0.13.1",
     "stylefmt": "^4.2.3",
@@ -129,7 +138,7 @@
     "history": "^2.0.2",
     "material-ui": "^0.15.4",
     "normalize.css": "^4.2.0",
-    "promise.prototype.finally": "^1.0.1",
+    "promise.prototype.finally": "^2.0.0",
     "radium": "^0.18.1",
     "react": "^15.3.1",
     "react-burger-menu": "^1.10.4",
