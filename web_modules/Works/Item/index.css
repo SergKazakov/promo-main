@@ -1,5 +1,4 @@
 .item {
-  display: block;
   height: 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,6 +10,10 @@
 
   @media (--mobile) {
     padding-bottom: 100%;
+  }
+
+  @media (--noMobile) {
+    float: left;
   }
 
   @media (--tablet) {

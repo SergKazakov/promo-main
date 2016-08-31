@@ -12,7 +12,7 @@ const {
   },
 } = React
 
-export default class Layout extends Component {
+class Layout extends Component {
   render() {
     return (
       <Analytics

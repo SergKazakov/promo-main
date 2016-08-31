@@ -60,7 +60,14 @@
 
 .list {
   @media (--noMobile) {
-    display: flex;
-    flex-wrap: wrap;
+    &::before,
+    &::after {
+      content: '';
+      display: table;
+    }
+
+    &::after {
+      clear: both;
+    }
   }
 }
