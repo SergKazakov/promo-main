@@ -1,31 +1,27 @@
 import Divider from "../Divider"
-import classnames from "classnames"
-import styles from "./index.css"
+import css from "./index.css"
 
 const {
   oneOf,
   string,
 } = React.PropTypes
 
-const Title = ({ theme="gray", title, subtitle }) => {
-  const titleClassName = classnames({
-    "titleGray": theme === "gray",
-    "titleWhite": theme === "white",
-  })
+const capitalize = className => className[0].toUpperCase() + className.slice(1)
 
-  const subtitleClassName = classnames({
-    "subtitleGray": theme === "gray",
-    "subtitleWhite": theme === "white",
-  })
+const Title = ({ theme="gray", title, subtitle }) => {
+  const capitalizeTheme = capitalize(theme)
 
   return (
-    <div className={ styles.wrapper }>
-      <h2 className={ styles[titleClassName] }>
+    <div className={ css.wrapper }>
+      <h2 className={ css[`title${capitalizeTheme}`] }>
         { title }
       </h2>
-      <h3 className={ styles[subtitleClassName] }>
-        { subtitle }
-      </h3>
+      {
+        subtitle &&
+        <h3 className={ css[`subtitle${capitalizeTheme}`] }>
+          { subtitle }
+        </h3>
+      }
       <Divider theme={ theme } />
     </div>
   )

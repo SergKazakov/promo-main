@@ -15,9 +15,11 @@
   &::before,
   &::after {
     content: '';
-    top: center;
-    height: 1px;
+    position: absolute;
+    top: 50%;
+    height: 0.1rem;
     width: 8rem;
+    margin-top: -0.05rem;
   }
 
   &::before {
