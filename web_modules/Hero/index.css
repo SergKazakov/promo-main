@@ -8,12 +8,9 @@
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background: rgba(0, 0, 0, 0.5);
   }
 }
@@ -27,10 +24,7 @@
 
 .content {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,27 +83,6 @@
   }
 }
 
-.footer {
-  display: flex;
-
-  @media (--mobile) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.btn {
-  @media (--mobile) {
-    & + & {
-      margin-top: 1.5rem;
-    }
-  }
-
-  @media (--noMobile) {
-    margin: 0 1.5rem;
-  }
-}
-
 .anchor {
   width: 6.4rem;
   height: 6.4rem;
@@ -132,8 +105,4 @@
   to {
     box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
   }
-}
-
-.btn {
-  composes: primary from '../Button/index.css';
 }

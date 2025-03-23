@@ -1,28 +1,41 @@
-import Title from "../Title"
-import styles from "./index.css"
-import clients from "./clients.json"
+import { Title } from "../Title"
+import css from "./index.css"
+import amazon from "!!file!./amazon.svg"
+import ember from "!!file!./ember.svg"
+import facebook from "!!file!./facebook.svg"
+import firebase from "!!file!./firebase.svg"
+import google from "!!file!./google.svg"
+import jquery from "!!file!./jquery.svg"
+import mocha from "!!file!./mocha.svg"
+import nodejs from "!!file!./nodejs.svg"
+import travisCi from "!!file!./travis-ci.svg"
+import youtube from "!!file!./youtube.svg"
 
-const Clients = () => (
-  <section className={ styles.wrapper }>
+export const Clients = () => (
+  <section className={css.wrapper}>
     <Title
-      title={ 'Great Integrations with Others' }
+      title={"Great Integrations with Others"}
       subtitle={
         "We actively use new technologies and interact with popular services"
       }
     />
-    <ul className={ styles.list }>
-      {
-        clients.map((item, index) => (
-          <li className={ styles.listItem } key={ index }>
-            <img
-              className={ styles.listImg }
-              src={ require(`!!file!./${item}.svg`) }
-            />
-          </li>
-        ))
-      }
+    <ul className={css.list}>
+      {[
+        jquery,
+        ember,
+        google,
+        mocha,
+        amazon,
+        facebook,
+        travisCi,
+        youtube,
+        firebase,
+        nodejs,
+      ].map((it, index) => (
+        <li className={css.listItem} key={index}>
+          <img className={css.listImg} src={it} />
+        </li>
+      ))}
     </ul>
   </section>
 )
-
-export default Clients

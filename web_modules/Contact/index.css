@@ -1,10 +1,10 @@
 .wrapper {
-  composes: wrapper from '../LayoutContainer/index.css';
+  composes: wrapper from "../Page/index.css";
   background: var(--solitude);
 }
 
 .contact {
-  composes: inner from '../LayoutContainer/index.css';
+  composes: inner from "../Page/index.css";
 
   @media (--noMobile) {
     display: flex;

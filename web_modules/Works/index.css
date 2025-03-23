@@ -1,5 +1,5 @@
 .wrapper {
-  composes: wrapper from '../LayoutContainer/index.css';
+  composes: wrapper from "../Page/index.css";
 
   @media (--desktop) {
     padding-bottom: 0;
@@ -30,7 +30,7 @@
 
   @media (--noMobile) {
     & + &::before {
-      content: '/';
+      content: "/";
       margin: 0 1.5rem;
     }
   }
@@ -62,7 +62,7 @@
   @media (--noMobile) {
     &::before,
     &::after {
-      content: '';
+      content: "";
       display: table;
     }
 
@@ -70,4 +70,77 @@
       clear: both;
     }
   }
+}
+
+.item {
+  height: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &:hover .itemOverlay {
+    opacity: 1;
+  }
+
+  @media (--mobile) {
+    padding-bottom: 100%;
+  }
+
+  @media (--noMobile) {
+    float: left;
+  }
+
+  @media (--tablet) {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+
+  @media (--desktop) {
+    width: 25%;
+    padding-bottom: 25%;
+  }
+}
+
+.itemOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(231, 76, 60, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 500ms;
+  cursor: pointer;
+  padding: 2rem;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.itemTitle {
+  font-size: 2.4rem;
+  margin: auto 0 1.5rem;
+  padding: 2.5rem 0 0;
+  position: relative;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.5rem;
+    height: 0.4rem;
+    background: white;
+  }
+}
+
+.itemCategory {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.itemText {
+  composes: itemText from "../Blog/index.css";
 }

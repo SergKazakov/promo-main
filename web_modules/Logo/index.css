@@ -1,9 +1,0 @@
-.wrapper {
-  @media (--noDesktop) {
-    margin-left: auto;
-  }
-}
-
-.logo {
-  display: block;
-}

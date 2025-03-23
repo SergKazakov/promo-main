@@ -1,44 +1,22 @@
-import { slide as Menu } from "react-burger-menu"
-import { Link } from "react-router"
-import { Link as ScrollLink } from "react-scroll"
-import Radium from "radium"
+import { slide as BurgerMenu } from "react-burger-menu"
 import "./index.global.css"
-import links from "../Nav/links.json"
 
-const RadiumLink = Radium(Link)
-const RadiumScrollLink = Radium(ScrollLink)
-
-export default () => (
-  <Menu>
-    <ul className={ 'bm-list' }>
-      {
-        links.map(({ title, url }, index) => {
-          const props = {
-            className: "bm-list__link",
-            to: url,
-            ...index && {
-              smooth: true,
-              duration: 2000,
-            },
-          }
-
-          if (!index) return (
-            <li key={ index } className={ 'bm-list__item' }>
-              <RadiumLink { ...props }>
-                { title }
-              </RadiumLink>
-            </li>
-          )
-
-          return (
-            <li key={ index } className={ 'bm-list__item' }>
-              <RadiumScrollLink { ...props }>
-                { title }
-              </RadiumScrollLink>
-            </li>
-          )
-        })
-      }
+export const Menu = () => (
+  <BurgerMenu>
+    <ul className={"bm-list"}>
+      {[
+        { title: "about us", url: "#about" },
+        { title: "portfolio", url: "#portfolio" },
+        { title: "pricing", url: "#pricing" },
+        { title: "blog", url: "#blog" },
+        { title: "contact", url: "#contact" },
+      ].map((it, index) => (
+        <li key={index} className={"bm-list__item"}>
+          <a className="bm-list__link" href={it.url}>
+            {it.title}
+          </a>
+        </li>
+      ))}
     </ul>
-  </Menu>
+  </BurgerMenu>
 )

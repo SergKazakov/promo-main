@@ -5,6 +5,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -14,7 +15,7 @@ html {
 }
 
 body {
-  font: 1rem 'Open Sans';
+  font: 1rem "Open Sans";
 }
 
 ul {

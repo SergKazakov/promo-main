@@ -1,16 +1,7 @@
-import "whatwg-fetch"
-import promiseFinally from "promise.prototype.finally"
-
-import injectTapEventPlugin from "react-tap-event-plugin"
 import metadata from "../web_modules/app/metadata"
 import routes from "../web_modules/app/routes"
 import store from "../web_modules/app/store"
-
 import phenomicClient from "phenomic/lib/client"
-
-promiseFinally.shim()
-
-injectTapEventPlugin()
 
 phenomicClient({
   metadata,

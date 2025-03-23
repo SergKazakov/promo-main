@@ -1,10 +1,10 @@
 .wrapper {
-  composes: wrapper from '../LayoutContainer/index.css';
+  composes: wrapper from "../Page/index.css";
   border-top: 1px solid var(--athensGrey);
 }
 
 .about {
-  composes: inner from '../LayoutContainer/index.css';
+  composes: inner from "../Page/index.css";
   display: flex;
 
   @media (--tablet) {
@@ -38,8 +38,4 @@
   color: var(--nobel);
   line-height: 2;
   margin: 3rem 0;
-}
-
-.btn {
-  composes: primary from '../Button/index.css';
 }

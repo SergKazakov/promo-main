@@ -7,8 +7,58 @@
 }
 
 .header {
-  composes: inner from '../LayoutContainer/index.css';
+  composes: inner from "../Page/index.css";
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.logoWrapper {
+  @media (--noDesktop) {
+    margin-left: auto;
+  }
+}
+
+.logo {
+  display: block;
+}
+
+.nav {
+  display: flex;
+}
+
+.navItem {
+  & + & {
+    margin-left: 5rem;
+  }
+}
+
+.navLink {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: var(--solitude);
+  padding: 2rem 0;
+  border-bottom: 1px solid transparent;
+  transition: border-color 300ms;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    color: transparent;
+    border-color: var(--cinnabar);
+  }
+
+  &:hover::before {
+    visibility: visible;
+  }
+
+  &::before {
+    content: attr(data-title);
+    visibility: hidden;
+    left: center;
+    font-weight: bold;
+    color: var(--cinnabar);
+    white-space: nowrap;
+  }
 }

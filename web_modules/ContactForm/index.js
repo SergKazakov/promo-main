@@ -5,13 +5,12 @@ import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
 import FormsyText from "formsy-material-ui/lib/FormsyText"
 import RaisedButton from "material-ui/RaisedButton"
 
-import pkg from "../../../package.json"
 import "./index.global.css"
 import css from "./index.css"
 
 const ToastMessageFactory = React.createFactory(ToastMessage.animation)
 
-class ContactForm extends React.Component {
+export class ContactForm extends React.Component {
   constructor(props) {
     super(props)
 
@@ -20,20 +19,14 @@ class ContactForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  state = {
-    isSubmitted: false,
-  }
+  state = { isSubmitted: false }
 
   handleEnableButton() {
-    this.setState({
-      isSubmitted: true,
-    })
+    this.setState({ isSubmitted: true })
   }
 
   handleDisableButton() {
-    this.setState({
-      isSubmitted: false,
-    })
+    this.setState({ isSubmitted: false })
   }
 
   handleSubmit(data) {
@@ -45,19 +38,14 @@ class ContactForm extends React.Component {
       formData.append(`entry.${key}`, value)
     }
 
-    fetch(pkg.contactUrl, {
-      method: "POST",
-      body: formData,
-    })
-    .finally(() => {
+    fetch(
+      "https://docs.google.com/forms/d/1PMAvWDgx8buxlQyHPjP7dRwsCI7fnWbFGovquu9pzCs/formResponse",
+      { method: "POST", body: formData },
+    ).finally(() => {
       this.contactForm.reset()
-      this.toast.success(
-        "We'll contact you as soon as possible.",
-        "Success",
-        {
-          closeButton: true,
-        }
-      )
+      this.toast.success("We'll contact you as soon as possible.", "Success", {
+        closeButton: true,
+      })
     })
   }
 
@@ -75,9 +63,7 @@ class ContactForm extends React.Component {
         lineHeight: "initial",
         fontSize: "1.4rem",
       },
-      underlineStyle: {
-        bottom: 0,
-      },
+      underlineStyle: { bottom: 0 },
       floatingLabelStyle: {
         top: "1.5rem",
         left: 0,
@@ -100,37 +86,19 @@ class ContactForm extends React.Component {
 
     const inputProps = {
       ...commonProps,
-      inputStyle: {
-        margin: 0,
-        height: "3.2rem",
-        display: "block",
-      },
-      floatingLabelFocusStyle: {
-        top: 0,
-        transform: "scale(0.75)",
-      },
+      inputStyle: { margin: 0, height: "3.2rem", display: "block" },
+      floatingLabelFocusStyle: { top: 0, transform: "scale(0.75)" },
     }
 
     const textareaProps = {
       ...commonProps,
-      textareaStyle: {
-        height: "100%",
-        margin: 0,
-        display: "block",
-      },
-      floatingLabelFocusStyle: {
-        top: "-0.5rem",
-        transform: "scale(0.75)",
-      },
+      textareaStyle: { height: "100%", margin: 0, display: "block" },
+      floatingLabelFocusStyle: { top: "-0.5rem", transform: "scale(0.75)" },
     }
 
     const buttonProps = {
       backgroundColor: "#e74c3c",
-      style : {
-        height: "auto",
-        verticalAlign: "top",
-        minWidth: 0,
-      },
+      style: { height: "auto", verticalAlign: "top", minWidth: 0 },
       labelStyle: {
         fontFamily: "Open Sans",
         fontWeight: "bold",
@@ -143,50 +111,50 @@ class ContactForm extends React.Component {
     }
 
     return (
-      <div className={ css.wrapper }>
+      <div className={css.wrapper}>
         <ToastContainer
-          toastMessageFactory={ ToastMessageFactory }
-          ref={ c => this.toast = c }
+          toastMessageFactory={ToastMessageFactory}
+          ref={c => (this.toast = c)}
           className="toast-top-right"
         />
         <MuiThemeProvider>
           <Formsy.Form
             noValidate
-            ref={ c => this.contactForm = c }
-            onValid={ this.handleEnableButton }
-            onInvalid={ this.handleDisableButton }
-            onValidSubmit={ this.handleSubmit }
+            ref={c => (this.contactForm = c)}
+            onValid={this.handleEnableButton}
+            onInvalid={this.handleDisableButton}
+            onValidSubmit={this.handleSubmit}
           >
             <FormsyText
-              { ...inputProps }
+              {...inputProps}
               name="896607324"
-              floatingLabelText={ "Name" }
+              floatingLabelText={"Name"}
             />
             <FormsyText
-              { ...inputProps }
+              {...inputProps}
               type="email"
               name="708584843"
               validations="isEmail"
-              floatingLabelText={ "Email" }
-              validationError={ emailError }
+              floatingLabelText={"Email"}
+              validationError={emailError}
             />
             <FormsyText
-              { ...inputProps }
+              {...inputProps}
               name="2092706974"
-              floatingLabelText={ "Subject" }
+              floatingLabelText={"Subject"}
             />
             <FormsyText
-              { ...textareaProps }
+              {...textareaProps}
               name="1358151322"
-              floatingLabelText={ "Message" }
+              floatingLabelText={"Message"}
               multiLine
-              rows={ 0 }
+              rows={0}
             />
             <RaisedButton
-              { ...buttonProps }
+              {...buttonProps}
               type="submit"
               label="send message"
-              disabled={ !this.state.isSubmitted }
+              disabled={!this.state.isSubmitted}
             />
           </Formsy.Form>
         </MuiThemeProvider>
@@ -194,5 +162,3 @@ class ContactForm extends React.Component {
     )
   }
 }
-
-export default ContactForm

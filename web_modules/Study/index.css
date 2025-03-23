@@ -1,10 +1,10 @@
 .wrapper {
-  composes: wrapper from '../LayoutContainer/index.css';
+  composes: wrapper from "../Page/index.css";
   background: var(--solitude);
 }
 
 .inner {
-  composes: inner from '../LayoutContainer/index.css';
+  composes: inner from "../Page/index.css";
 
   @media (--noMobile) {
     display: flex;
@@ -36,7 +36,7 @@
   }
 
   & :global(.slick-slide) {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     padding: 8rem 0 11rem;
@@ -71,7 +71,7 @@
 }
 
 .listTitle {
-  composes: title from '../Features/Feature/index.css';
+  composes: title from "../Features/index.css";
 }
 
 .listIcon {
