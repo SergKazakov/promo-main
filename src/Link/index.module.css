@@ -1,0 +1,52 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  transition:
+    color 300ms,
+    background 300ms,
+    border-color 300ms,
+    box-shadow 300ms,
+    opacity 300ms;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem;
+  padding: 1.75rem 4rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  &,
+  &:focus,
+  &:hover {
+    color: white;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: no-drop;
+    pointer-events: none;
+  }
+}
+
+.primary,
+.gray {
+  composes: btn;
+}
+
+.primary {
+  background: var(--cinnabar);
+
+  &:hover {
+    background: rgb(204, 73, 60);
+  }
+}
+
+.gray {
+  background: var(--nobel);
+
+  &:hover {
+    background: hsl(0, 0%, 65%);
+  }
+}

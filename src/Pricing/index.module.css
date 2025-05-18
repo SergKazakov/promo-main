@@ -1,0 +1,17 @@
+.wrapper {
+  composes: wrapper from "../Page/index.module.css";
+}
+
+.pricing {
+  composes: inner from "../Page/index.module.css";
+}
+
+.list {
+  @media (--noMobile) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 -0.8rem;
+  }
+}

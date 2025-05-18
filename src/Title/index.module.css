@@ -1,0 +1,38 @@
+.wrapper {
+  margin: 0 0 5rem;
+  padding: 5rem 1.5rem 0;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+
+.titleGray {
+  composes: title;
+  color: var(--dim-gray);
+}
+
+.titleWhite {
+  composes: title;
+  color: white;
+}
+
+.subtitle {
+  margin: 2rem 0;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+.subtitleGray {
+  composes: subtitle;
+  color: var(--nobel);
+}
+
+.subtitleWhite {
+  composes: subtitle;
+  color: white;
+}

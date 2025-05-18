@@ -1,0 +1,72 @@
+.wrapper {
+  composes: wrapper from "../Page/index.module.css";
+  background: var(--solitude);
+}
+
+.contact {
+  composes: inner from "../Page/index.module.css";
+
+  @media (--noMobile) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.aside {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
+  background: white;
+
+  @media (--mobile) {
+    padding: 2rem;
+  }
+
+  @media (--noMobile) {
+    border-radius: 0.5rem;
+  }
+}
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (--mobile) {
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+
+  @media (--noMobile) {
+    width: calc(480 / 1170 * 100%);
+  }
+
+  @media (--tablet) {
+    padding: 0 2rem;
+  }
+
+  @media (--desktop) {
+    padding: 0 9rem;
+  }
+}
+
+.title {
+  margin: 0 0 2rem;
+  color: var(--cinnabar);
+  font-weight: bold;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+
+  &:not(:first-child) {
+    margin-top: 6rem;
+  }
+}
+
+.text {
+  margin: 0;
+  color: var(--nobel);
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.textLink {
+  color: inherit;
+}

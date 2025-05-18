@@ -1,0 +1,50 @@
+.divider {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.dividerInner {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: var(--cinnabar);
+  width: 0.7rem;
+  height: 0.7rem;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.05rem;
+    width: 8rem;
+    height: 0.1rem;
+    content: "";
+  }
+
+  &::before {
+    right: calc(100% + 1.4rem);
+  }
+
+  &::after {
+    left: calc(100% + 1.4rem);
+  }
+}
+
+.dividerInnerGray {
+  composes: dividerInner;
+
+  &::before,
+  &::after {
+    background: var(--nobel);
+  }
+}
+
+.dividerInnerWhite {
+  composes: dividerInner;
+
+  &::before,
+  &::after {
+    background: white;
+  }
+}

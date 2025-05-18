@@ -1,0 +1,148 @@
+.wrapper {
+  composes: wrapper from "../Page/index.module.css";
+
+  @media (--desktop) {
+    padding-bottom: 0;
+  }
+}
+
+.nav {
+  margin: 5rem 0;
+
+  @media (--noMobile) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.navItem {
+  color: var(--nobel);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+
+  @media (--mobile) {
+    text-align: center;
+
+    & + & {
+      margin-top: 2rem;
+    }
+  }
+
+  @media (--noMobile) {
+    & + &::before {
+      margin: 0 1.5rem;
+      content: "/";
+    }
+  }
+}
+
+.navLink {
+  position: relative;
+  color: inherit;
+
+  &:hover {
+    color: white;
+  }
+
+  &:hover::before {
+    visibility: visible;
+  }
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    content: attr(data-title);
+    color: var(--cinnabar);
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}
+
+.list {
+  @media (--noMobile) {
+    &::before,
+    &::after {
+      display: table;
+      content: "";
+    }
+
+    &::after {
+      clear: both;
+    }
+  }
+}
+
+.item {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 0;
+
+  &:hover .itemOverlay {
+    opacity: 1;
+  }
+
+  @media (--mobile) {
+    padding-bottom: 100%;
+  }
+
+  @media (--noMobile) {
+    float: left;
+  }
+
+  @media (--tablet) {
+    padding-bottom: 50%;
+    width: 50%;
+  }
+
+  @media (--desktop) {
+    padding-bottom: 25%;
+    width: 25%;
+  }
+}
+
+.itemOverlay {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 500ms;
+  cursor: pointer;
+  inset: 0;
+  background: rgba(231, 76, 60, 0.8);
+  padding: 2rem;
+  color: white;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.itemTitle {
+  position: relative;
+  margin: auto 0 1.5rem;
+  padding: 2.5rem 0 0;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 4.5rem;
+    height: 0.4rem;
+    content: "";
+  }
+}
+
+.itemCategory {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.itemText {
+  composes: itemText from "../Blog/index.module.css";
+}

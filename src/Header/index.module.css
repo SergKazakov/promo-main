@@ -1,0 +1,66 @@
+.wrapper {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header {
+  composes: inner from "../Page/index.module.css";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoWrapper {
+  @media (--noDesktop) {
+    margin-left: auto;
+  }
+}
+
+.logo {
+  display: block;
+}
+
+.nav {
+  display: flex;
+}
+
+.navItem {
+  & + & {
+    margin-left: 5rem;
+  }
+}
+
+.navLink {
+  display: block;
+  position: relative;
+  transition: border-color 300ms;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  padding: 2rem 0;
+  color: var(--solitude);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: var(--cinnabar);
+    color: transparent;
+  }
+
+  &:hover::before {
+    visibility: visible;
+  }
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    content: attr(data-title);
+    color: var(--cinnabar);
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,25 @@
+.wrapper {
+  @media (--mobile) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (--tablet) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @media (--desktop) {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+}
+
+.inner {
+  padding: 0 1.5rem;
+
+  @media (width >= 1200px) {
+    margin: 0 auto;
+    max-width: 120rem;
+  }
+}

@@ -1,0 +1,145 @@
+.wrapper {
+  composes: wrapper from "../Page/index.module.css";
+  background: url("./team.jpg") center / cover no-repeat;
+  height: 74.4rem;
+  overflow: hidden;
+}
+
+.inner {
+  composes: inner from "../Page/index.module.css";
+  display: flex;
+
+  @media (--mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (--noMobile) {
+    align-items: flex-start;
+  }
+
+  @media (--tablet) {
+    justify-content: space-around;
+    margin: 15rem 0 0;
+  }
+
+  @media (--desktop) {
+    justify-content: space-between;
+  }
+}
+
+.item {
+  position: relative;
+  transition: margin 300ms;
+
+  &:hover .img {
+    transform: scale(1.5);
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.6);
+  }
+
+  &:hover .content {
+    transform: translate(-50%, 2rem);
+    opacity: 1;
+  }
+
+  @media (--mobile) {
+    & + & {
+      margin-top: 4rem;
+    }
+
+    &:hover + & {
+      margin-top: 10rem;
+    }
+  }
+
+  @media (--tablet) {
+    &:first-child {
+      margin: 1rem 0 0;
+    }
+
+    &:nth-child(3) {
+      margin: 2rem 0 0;
+    }
+
+    &:last-child {
+      margin: 4rem 0 0;
+    }
+  }
+
+  @media (--desktop) {
+    &:first-child {
+      margin: 7rem 0 0;
+    }
+
+    &:nth-child(2) {
+      margin: 1rem 0 0;
+    }
+
+    &:nth-child(3) {
+      margin: 4.5rem 0 0;
+    }
+
+    &:last-child {
+      margin: 1rem 0 0;
+    }
+  }
+}
+
+.img {
+  position: relative;
+  z-index: 1;
+  backface-visibility: hidden;
+  transition:
+    transform 300ms,
+    box-shadow 300ms;
+  border: 3px solid var(--cinnabar);
+  border-radius: 50%;
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition:
+    transform 300ms,
+    opacity 300ms;
+  text-align: center;
+
+  @media (--mobile) {
+    top: 100%;
+  }
+
+  @media (--noMobile) {
+    top: calc(100% + 5rem);
+
+    &::before {
+      position: absolute;
+      bottom: calc(100% + 2rem);
+      left: 50%;
+      transform: translateX(-50%);
+      background: white;
+      width: 0.1rem;
+      height: 5rem;
+      content: "";
+    }
+  }
+}
+
+.title,
+.subtitle {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.title {
+  margin: 0 0 0.5rem;
+  color: var(--cinnabar);
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: white;
+  font-size: 1.4em;
+}
